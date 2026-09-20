@@ -148,8 +148,8 @@ function QuestionList({
                     : 'w-full text-left rounded-xl border border-slate-200 bg-paper px-4 py-3 hover:border-amber/50 transition'
                 }
               >
-                <span className="font-semibold text-ink">Q{i + 1}.</span>{' '}
-                <Rich html={item.q} className="text-slate-700 leading-relaxed" />
+                <span className={polished ? 'text-[17px] font-extrabold tracking-tight text-ink' : 'font-semibold text-ink'}>Q{i + 1}.</span>{' '}
+                <Rich html={item.q} className={polished ? 'question-polished text-[15px] font-semibold leading-relaxed text-slate-800' : 'text-slate-700 leading-relaxed'} />
                 {polished ? (
                   <span
                     aria-hidden

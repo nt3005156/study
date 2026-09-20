@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
   ArrowLeft, ArrowRight, BookOpen, Lightbulb, PenTool, Layers,
-  KeyRound, Zap, CalendarClock, Target,
+  KeyRound, Zap, Target,
 } from 'lucide-react';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { DetailedNotes, DetailedNotesToc, type Section } from '@/components/DetailedNotes';
@@ -28,7 +28,7 @@ type Detailed = {
   exercise_heading?: string;
   key_terms: { term: string; meaning: string }[];
   quick_revision: { title: string; points: string[] }[];
-  teaching_plan: { period: string; topic: string; activity: string; figures: string[] }[];
+  teaching_plan?: { period: string; topic: string; activity: string; figures: string[] }[];
 };
 
 const units = data.units as unknown as (typeof data.units)[number][];
@@ -61,7 +61,6 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
   const next = index < units.length - 1 ? units[index + 1] : null;
 
   const heading = detailed ? `${unit.chapter} — ${detailed.chapter_title}` : unit.title;
-  const pageRange = detailed ? detailed.book_pages : unit.pages;
 
   return (
     <>
@@ -79,7 +78,7 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
         <header className="mb-8">
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <span className="text-xs font-bold text-amber-deep bg-amber/10 px-2.5 py-1 rounded-full">
-              {unit.chapter} {pageRange ? `• Textbook pages ${pageRange}` : ''}
+              {unit.chapter}
             </span>
             {detailed ? (
               <span className="text-xs font-bold text-emerald bg-emeraldLight px-2.5 py-1 rounded-full">
@@ -246,33 +245,6 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
                     </ul>
                   </div>
                 ))}
-              </div>
-            </section>
-
-            {/* teaching plan */}
-            <section id="teaching-plan" aria-labelledby="tp-heading" className="mb-14 scroll-mt-24">
-              <h2 id="tp-heading" className="flex items-center gap-3 font-serif text-2xl font-bold text-ink mb-5">
-                <CalendarClock className="text-amber" size={24} /> Suggested Teaching Plan
-              </h2>
-              <div className="rounded-3xl border border-slate-200 overflow-hidden">
-                <table className="w-full text-sm">
-                  <thead className="bg-white">
-                    <tr>
-                      <th className="text-left font-bold text-ink px-5 py-3 border-b border-slate-200">Period</th>
-                      <th className="text-left font-bold text-ink px-5 py-3 border-b border-slate-200">Sections</th>
-                      <th className="text-left font-bold text-ink px-5 py-3 border-b border-slate-200">Classroom activity</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {detailed.teaching_plan.map((t, i) => (
-                      <tr key={i} className={i % 2 ? 'bg-slate-50/60' : 'bg-white'}>
-                        <td className="px-5 py-4 font-semibold text-ink whitespace-nowrap align-top border-b border-slate-100">{t.period}</td>
-                        <RichBlock as="td" html={t.topic} className="px-5 py-4 text-slate-700 whitespace-nowrap align-top border-b border-slate-100" />
-                        <RichBlock as="td" html={t.activity} className="px-5 py-4 text-slate-700 leading-relaxed align-top border-b border-slate-100" />
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
               </div>
             </section>
           </>

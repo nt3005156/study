@@ -27,7 +27,8 @@ export type Section = {
   id: string;
   number: string;
   title: string;
-  page: number;
+  /** Physical textbook page; omitted where the site hides print artifacts. */
+  page?: number;
   blocks: Block[];
 };
 
@@ -149,7 +150,7 @@ function BlockView({ block, defaultLang, compact = false }: { block: Block; defa
           </div>
           <figcaption className="flex items-start gap-2 border-t border-slate-100 bg-white px-4 py-2.5 text-[13px] leading-snug text-stone">
             <span className="mt-px shrink-0 rounded-md bg-amber/15 px-1.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-amber-deep">Figure</span>
-            <span className="min-w-0 flex-1"><Rich html={block.caption} />{typeof block.page === 'number' ? <span className="whitespace-nowrap text-slate-400"> · p. {block.page}</span> : null}</span>
+            <span className="min-w-0 flex-1"><Rich html={block.caption} /></span>
           </figcaption>
         </figure>
       );
@@ -229,24 +230,60 @@ function BlockView({ block, defaultLang, compact = false }: { block: Block; defa
   }
 }
 
-/** Print-textbook layout: a figure/diagram is set beside the paragraph or list
- *  that introduces it, instead of stacking full-width below it. */
-const PAIRABLE = new Set(['p', 'list', 'definition', 'note', 'example', 'teacher']);
+/** Print-textbook layout: a figure/diagram is set beside the paragraph, table or
+ *  list that introduces it, instead of stacking full-width below it. Runs of
+ *  consecutive figures become a 2-up gallery. Only used with `sideBySide`. */
+const PAIRABLE = new Set(['p', 'list', 'table', 'steps', 'code', 'definition', 'note', 'example', 'teacher']);
 const VISUAL = new Set(['figure', 'diagram']);
 
 type Node =
   | { kind: 'single'; block: Block }
-  | { kind: 'pair'; text: Block; visual: Block };
+  | { kind: 'pair'; text: Block; visual: Block; flip?: boolean }
+  | { kind: 'gallery'; blocks: Block[] };
 
 function pairBlocks(blocks: Block[]): Node[] {
   const nodes: Node[] = [];
-  for (const b of blocks) {
+  const lastSingle = (): Block | null => {
     const prev = nodes[nodes.length - 1];
-    if (b && VISUAL.has(b.type) && prev && prev.kind === 'single' && PAIRABLE.has(prev.block.type)) {
-      nodes[nodes.length - 1] = { kind: 'pair', text: prev.block, visual: b };
+    return prev && prev.kind === 'single' ? prev.block : null;
+  };
+  let i = 0;
+  while (i < blocks.length) {
+    const b = blocks[i];
+    if (b.type === 'figure') {
+      let j = i;
+      while (j < blocks.length && blocks[j].type === 'figure') j++;
+      const run = blocks.slice(i, j);
+      const prev = lastSingle();
+      let rest = run;
+      if (prev && PAIRABLE.has(prev.type)) {
+        nodes[nodes.length - 1] = { kind: 'pair', text: prev, visual: run[0] };
+        rest = run.slice(1);
+      }
+      if (rest.length >= 2) nodes.push({ kind: 'gallery', blocks: rest });
+      else if (rest.length === 1) nodes.push({ kind: 'single', block: rest[0] });
+      i = j;
+      continue;
+    }
+    if (b && VISUAL.has(b.type)) {
+      const prev = lastSingle();
+      if (prev && PAIRABLE.has(prev.type)) {
+        nodes[nodes.length - 1] = { kind: 'pair', text: prev, visual: b };
+      } else {
+        nodes.push({ kind: 'single', block: b });
+      }
+      i++;
+      continue;
+    }
+    // Figure-first ordering: a lone visual directly above a text block pairs
+    // with it, keeping DOM order (visual left, text right on desktop).
+    const prev = lastSingle();
+    if (b && prev && PAIRABLE.has(b.type) && VISUAL.has(prev.type)) {
+      nodes[nodes.length - 1] = { kind: 'pair', text: b, visual: prev, flip: true };
     } else {
       nodes.push({ kind: 'single', block: b });
     }
+    i++;
   }
   return nodes;
 }
@@ -269,6 +306,21 @@ export function DetailedNotes({ sections, defaultLang, sideBySide = false }: { s
             {nodes.map((node, i) =>
               node.kind === 'single' ? (
                 <BlockView key={i} block={node.block} defaultLang={defaultLang} compact={sideBySide} />
+              ) : node.kind === 'gallery' ? (
+                <div key={i} className="grid items-start gap-5 sm:grid-cols-2">
+                  {node.blocks.map((gb, j) => (
+                    <BlockView key={j} block={gb} defaultLang={defaultLang} compact={sideBySide} />
+                  ))}
+                </div>
+              ) : node.flip ? (
+                <div key={i} className="grid items-start gap-6 lg:grid-cols-[300px_minmax(0,1fr)]">
+                  <aside className="min-w-0">
+                    <BlockView block={node.visual} defaultLang={defaultLang} compact={sideBySide} />
+                  </aside>
+                  <div className="min-w-0">
+                    <BlockView block={node.text} defaultLang={defaultLang} compact={sideBySide} />
+                  </div>
+                </div>
               ) : (
                 <div key={i} className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
                   <div className="min-w-0">

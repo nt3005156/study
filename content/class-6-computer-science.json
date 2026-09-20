@@ -108,7 +108,6 @@
             "id": "introduction",
             "number": "1.1",
             "title": "Introduction",
-            "page": 1,
             "blocks": [
               {
                 "type": "p",
@@ -129,7 +128,6 @@
             "id": "definition",
             "number": "1.2",
             "title": "Definition of Computer",
-            "page": 2,
             "blocks": [
               {
                 "type": "p",
@@ -206,32 +204,27 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/computer-in-education.jpg",
-                "caption": "Computer in Education",
-                "page": 5
+                "caption": "Computer in Education"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/computer-in-business.jpg",
-                "caption": "Computer in Business",
-                "page": 5
+                "caption": "Computer in Business"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/computer-in-office.jpg",
-                "caption": "Computer in Office",
-                "page": 6
+                "caption": "Computer in Office"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/computer-in-communication.jpg",
-                "caption": "Computer in Communication",
-                "page": 7
+                "caption": "Computer in Communication"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/computer-in-bank.jpg",
-                "caption": "Computer in Bank",
-                "page": 7
+                "caption": "Computer in Bank"
               }
             ]
           },
@@ -239,7 +232,6 @@
             "id": "characteristics",
             "number": "1.3",
             "title": "Characteristics (Features) of Computer",
-            "page": 3,
             "blocks": [
               {
                 "type": "p",
@@ -264,8 +256,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/characteristics-features-of-computer.jpg",
-                "caption": "Characteristics (Features) of Computer",
-                "page": 3
+                "caption": "Characteristics (Features) of Computer"
               }
             ]
           },
@@ -273,7 +264,6 @@
             "id": "capabilities-limitations",
             "number": "1.4",
             "title": "Capabilities and Limitations of Computer",
-            "page": 4,
             "blocks": [
               {
                 "type": "h3",
@@ -314,7 +304,6 @@
             "id": "application-areas",
             "number": "1.5",
             "title": "Application Areas of Computer",
-            "page": 4,
             "blocks": [
               {
                 "type": "p",
@@ -396,42 +385,36 @@
           {
             "file": "/figures/class6/characteristics-features-of-computer.jpg",
             "caption": "Characteristics (Features) of Computer",
-            "page": 3,
             "section": "characteristics",
             "section_title": "Characteristics (Features) of Computer"
           },
           {
             "file": "/figures/class6/computer-in-education.jpg",
             "caption": "Computer in Education",
-            "page": 5,
             "section": "definition",
             "section_title": "Definition of Computer"
           },
           {
             "file": "/figures/class6/computer-in-business.jpg",
             "caption": "Computer in Business",
-            "page": 5,
             "section": "definition",
             "section_title": "Definition of Computer"
           },
           {
             "file": "/figures/class6/computer-in-office.jpg",
             "caption": "Computer in Office",
-            "page": 6,
             "section": "definition",
             "section_title": "Definition of Computer"
           },
           {
             "file": "/figures/class6/computer-in-communication.jpg",
             "caption": "Computer in Communication",
-            "page": 7,
             "section": "definition",
             "section_title": "Definition of Computer"
           },
           {
             "file": "/figures/class6/computer-in-bank.jpg",
             "caption": "Computer in Bank",
-            "page": 7,
             "section": "definition",
             "section_title": "Definition of Computer"
           }
@@ -485,20 +468,20 @@
           "objective_heading": "Objective questions",
           "objective": [
             {
-              "q": "Rewrite each incorrect statement to make it correct. (a) Computers are machines that were invented to play computer games and for entertainment purposes.<br>(b) Information is the processed data.<br>(c) Computer can produce accurate output if the inputs are inaccurate.<br>(d) Computer gets tired and bored when it performs repetitive tasks.<br>(e) Computers are used in the office for watching movies and playing games.",
+              "q": "Rewrite each incorrect statement to make it correct. (a) Computers are machines that were invented to play computer games and for entertainment purposes.<ol><li>Information is the processed data.</li><li>Computer can produce accurate output if the inputs are inaccurate.</li><li>Computer gets tired and bored when it performs repetitive tasks.</li><li>Computers are used in the office for watching movies and playing games.</li></ol>",
               "a": "<ol><li>Incorrect. Computers are machines that were invented to help people solve problems and make tasks easier to do. (Games and entertainment are things a computer can do, but they are not why it was invented.)</li><li>Correct as it stands. Information is refined, or processed, data.</li><li>Incorrect. A computer can produce accurate output only when the inputs given to it are accurate. Wrong input gives wrong output — the GIGO rule.</li><li>Incorrect. A computer never gets tired or bored: it can perform repetitive tasks for hours or days with the same accuracy. That is its diligence.</li><li>Incorrect. Computers are used in the office for writing letters, memos and notices, sending emails, scheduling meetings and giving presentations.</li></ol>"
             },
             {
-              "q": "State whether the following statements are true or false. Rewrite each false statement to make it true. (a) The word \"computer\" comes from the Latin word \"comput\".<br>(b) The accuracy of the computer is 100%.<br>(c) Once instructions are fed to the computer, it works automatically without any human intervention.<br>(d) A versatile machine means able to do many similar things.<br>(e) The computer is a dull machine.",
+              "q": "State whether the following statements are true or false. Rewrite each false statement to make it true. (a) The word \"computer\" comes from the Latin word \"comput\".<ol><li>The accuracy of the computer is 100%.</li><li>Once instructions are fed to the computer, it works automatically without any human intervention.</li><li>A versatile machine means able to do many similar things.</li><li>The computer is a dull machine.</li></ol>",
               "a": "<ol><li><strong>False.</strong> The word comes from the Latin <em>computare</em>, which means to calculate.</li><li><strong>True.</strong> A computer's accuracy is about 100% — provided the inputs are accurate.</li><li><strong>True.</strong> This is what automation means.</li><li><strong>False.</strong> A versatile machine is one able to do many <em>different</em> things in different areas, not many similar ones.</li><li><strong>True.</strong> The computer is a dull machine — it cannot think or make decisions the way a person can.</li></ol>"
             },
             {
-              "q": "Fill in the blanks with the appropriate word. (a) The computer processes … according to the … given by the user.<br>(b) The computer is used to help people … and make tasks … to do.<br>(c) The computer cannot work without … supply.<br>(d) The computer is used in the bank for …<br>(e) The computer is used in education for …",
+              "q": "Fill in the blanks with the appropriate word. (a) The computer processes … according to the … given by the user.<ol><li>The computer is used to help people … and make tasks … to do.</li><li>The computer cannot work without … supply.</li><li>The computer is used in the bank for …</li><li>The computer is used in education for …</li></ol>",
               "a": "<ol><li>The computer processes <strong>input data</strong> according to the <strong>instructions</strong> given by the user.</li><li>The computer is used to help people <strong>solve problems</strong> and make tasks <strong>easier</strong> to do.</li><li>The computer cannot work without <strong>power</strong> supply (electricity).</li><li>The computer is used in the bank for <strong>handling customer transactions</strong> — maintaining the ledger, issuing deposit receipts, and making withdrawals and deposits.</li><li>The computer is used in education for <strong>learning</strong> — online classes, online examinations, online tutoring, e-books and lab work.</li></ol>"
             },
             {
-              "q": "Match the following. (a) Speed<br>(b) Accuracy<br>(c) Automation<br>(d) Diligence<br>(e) Versatility — with: millions of instructions per second; GIGO; functioning without user intervention; performing repetitive tasks without being tired; used in different areas for different tasks.",
-              "a": "<table><tr><th>Characteristic</th><th>Matches</th></tr><tr><td><strong>(a) Speed</strong></td><td>millions of instructions per second</td></tr><tr><td><strong>(b) Accuracy</strong></td><td>GIGO</td></tr><tr><td><strong>(c) Automation</strong></td><td>functioning without user intervention</td></tr><tr><td><strong>(d) Diligence</strong></td><td>performing repetitive tasks without being tired</td></tr><tr><td><strong>(e) Versatility</strong></td><td>used in different areas for different tasks</td></tr></table><p>Accuracy pairs with GIGO because both concern the link between input and output: a computer is accurate only when the input is, and GIGO is the name for what happens when it is not.</p>"
+              "q": "Match the following:<table class=\"match-cols\"><tr><th>Column A</th><th>Column B</th></tr><tr><td><strong>(a)</strong> Speed</td><td>millions of instructions per second</td></tr><tr><td><strong>(b)</strong> Accuracy</td><td>GIGO</td></tr><tr><td><strong>(c)</strong> Automation</td><td>functioning without user intervention</td></tr><tr><td><strong>(d)</strong> Diligence</td><td>performing repetitive tasks without being tired</td></tr><tr><td><strong>(e)</strong> Versatility</td><td>used in different areas for different tasks</td></tr></table>",
+              "a": "<table class=\"match-cols\"><tr><th>Characteristic</th><th>Matches</th></tr><tr><td><strong>(a) Speed</strong></td><td>millions of instructions per second</td></tr><tr><td><strong>(b) Accuracy</strong></td><td>GIGO</td></tr><tr><td><strong>(c) Automation</strong></td><td>functioning without user intervention</td></tr><tr><td><strong>(d) Diligence</strong></td><td>performing repetitive tasks without being tired</td></tr><tr><td><strong>(e) Versatility</strong></td><td>used in different areas for different tasks</td></tr></table><p>Accuracy pairs with GIGO because both concern the link between input and output: a computer is accurate only when the input is, and GIGO is the name for what happens when it is not.</p>"
             }
           ],
           "practical_heading": "Project work",
@@ -589,32 +572,6 @@
               "Communication — email, social media, video chat, conferencing",
               "Bank — transactions, ledgers, receipts, online payments"
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "What a computer is",
-            "activity": "Ask the class what they used a computer for before school today. Collect the answers, then give the Latin origin and the definition. Draw the input → process → output cycle on the board and work through the terms in the definition.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "The five characteristics",
-            "activity": "Take each characteristic and ask for an example the pupils have seen. Spend time on accuracy and GIGO: enter a silly figure into a sum and show the silly answer that comes back.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Capabilities and limitations",
-            "activity": "Build two columns on the board. Ask what a computer can do, then what it cannot. Close on the point that everything on the \"cannot\" list involves judgement or power.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Application areas",
-            "activity": "Work through education, business, office, communication and bank. For each, ask pupils to name something they or their family have actually done. Then set the chart as the project work.",
-            "figures": []
           }
         ]
       }
@@ -740,26 +697,22 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/mouse.jpg",
-                "caption": "Mouse",
-                "page": 12
+                "caption": "Mouse"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/touchpad.jpg",
-                "caption": "Touchpad",
-                "page": 13
+                "caption": "Touchpad"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/joystick-and-its-different-forms.jpg",
-                "caption": "Joystick and its Different Forms",
-                "page": 13
+                "caption": "Joystick and its Different Forms"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/touch-screen.jpg",
-                "caption": "Touch Screen",
-                "page": 14
+                "caption": "Touch Screen"
               },
               {
                 "type": "diagram",
@@ -788,8 +741,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/central-processing-unit.jpg",
-                "caption": "Central Processing Unit",
-                "page": 15
+                "caption": "Central Processing Unit"
               }
             ]
           },
@@ -816,8 +768,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/memory-devices.jpg",
-                "caption": "Memory Devices",
-                "page": 16
+                "caption": "Memory Devices"
               }
             ]
           },
@@ -873,32 +824,27 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/computer-hardware-components.jpg",
-                "caption": "Computer Hardware Components",
-                "page": 11
+                "caption": "Computer Hardware Components"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/crt-monitor.jpg",
-                "caption": "CRT Monitor",
-                "page": 18
+                "caption": "CRT Monitor"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/lcd-monitor.jpg",
-                "caption": "LCD Monitor",
-                "page": 18
+                "caption": "LCD Monitor"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/led-monitor.jpg",
-                "caption": "LED Monitor",
-                "page": 19
+                "caption": "LED Monitor"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/printer.jpg",
-                "caption": "Printer",
-                "page": 19
+                "caption": "Printer"
               }
             ]
           },
@@ -906,7 +852,6 @@
             "id": "summary-at-a-glance",
             "number": "",
             "title": "Summary at a Glance",
-            "page": null,
             "blocks": [
               {
                 "type": "p",
@@ -927,77 +872,66 @@
           {
             "file": "/figures/class6/computer-hardware-components.jpg",
             "caption": "Computer Hardware Components",
-            "page": 11,
             "section": "output-unit",
             "section_title": "Output Unit"
           },
           {
             "file": "/figures/class6/mouse.jpg",
             "caption": "Mouse",
-            "page": 12,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/touchpad.jpg",
             "caption": "Touchpad",
-            "page": 13,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/joystick-and-its-different-forms.jpg",
             "caption": "Joystick and its Different Forms",
-            "page": 13,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/touch-screen.jpg",
             "caption": "Touch Screen",
-            "page": 14,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/central-processing-unit.jpg",
             "caption": "Central Processing Unit",
-            "page": 15,
             "section": "central-processing-unit",
             "section_title": "Central Processing Unit"
           },
           {
             "file": "/figures/class6/memory-devices.jpg",
             "caption": "Memory Devices",
-            "page": 16,
             "section": "memory-unit",
             "section_title": "Memory Unit"
           },
           {
             "file": "/figures/class6/crt-monitor.jpg",
             "caption": "CRT Monitor",
-            "page": 18,
             "section": "output-unit",
             "section_title": "Output Unit"
           },
           {
             "file": "/figures/class6/lcd-monitor.jpg",
             "caption": "LCD Monitor",
-            "page": 18,
             "section": "output-unit",
             "section_title": "Output Unit"
           },
           {
             "file": "/figures/class6/led-monitor.jpg",
             "caption": "LED Monitor",
-            "page": 19,
             "section": "output-unit",
             "section_title": "Output Unit"
           },
           {
             "file": "/figures/class6/printer.jpg",
             "caption": "Printer",
-            "page": 19,
             "section": "output-unit",
             "section_title": "Output Unit"
           }
@@ -1093,20 +1027,20 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) The physical part of the computer, which can be touched is known as software<br>(b) Input unit is used for the result after processing to the user<br>(c) CPU is responsible for providing inputs to the computer<br>(d) The memory unit processes the inputs to produce the output and controls all the operations of the computer<br>(e) Output unit is used to store data and instructions permanently",
+              "q": "Rewrite the incorrect statements:<ol><li>The physical part of the computer, which can be touched is known as software</li><li>Input unit is used for the result after processing to the user</li><li>CPU is responsible for providing inputs to the computer</li><li>The memory unit processes the inputs to produce the output and controls all the operations of the computer</li><li>Output unit is used to store data and instructions permanently</li></ol>",
               "a": "<ol><li>The physical part of the computer, which can be touched, is known as <strong>hardware</strong>. (Software is the set of programs; it cannot be touched.)</li><li>The <strong>output unit</strong> is used to provide the result after processing to the user. (The input unit is used to feed data and instructions into the computer.)</li><li>The <strong>input unit</strong> is responsible for providing inputs to the computer. (The CPU takes those inputs and processes them.)</li><li>The <strong>CPU</strong> processes the inputs to produce the output and controls all the operations of the computer. (The memory unit only stores data and instructions.)</li><li>The <strong>secondary memory</strong> is used to store data and instructions permanently. (The output unit presents the results.)</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) The keyboard is the hardware through which the user can input data<br>(b) ALU is used to control the operations of the computer<br>(c) Register is the permanent memory of the computer<br>(d) RAM, ROM, and Cache memory are the primary memories<br>(e) Softcopy refers to the output printed on paper that can be touched",
+              "q": "State whether the following are true or false:<ol><li>The keyboard is the hardware through which the user can input data</li><li>ALU is used to control the operations of the computer</li><li>Register is the permanent memory of the computer</li><li>RAM, ROM, and Cache memory are the primary memories</li><li>Softcopy refers to the output printed on paper that can be touched</li></ol>",
               "a": "<ol><li>True. The keyboard is the hardware through which the user can input data.</li><li>False. The <strong>control unit (CU)</strong> controls the operations of the computer. The ALU carries out the arithmetic and logic calculations.</li><li>False. A register is a <strong>temporary, very fast storage location inside the CPU</strong>. Permanent storage is the job of secondary memory such as a hard disk.</li><li>True. RAM, ROM, and Cache memory are the primary memories.</li><li>False. That is <strong>hardcopy</strong>. Softcopy is the output shown on a display screen or heard through a speaker.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) ... ... ... is responsible for controlling the operations of the computer<br>(b) The two types of memory devices are ... ... ... and ... ... <br>(c) ... ... ... refers to the output that is shown on a display screen<br>(d) CRT monitor is a ... ... ... sized monitor<br>(e) Printer is used to ... ... ",
+              "q": "Fill in the blanks:<ol><li>... ... ... is responsible for controlling the operations of the computer</li><li>The two types of memory devices are ... ... ... and ... ...</li><li>... ... ... refers to the output that is shown on a display screen</li><li>CRT monitor is a ... ... ... sized monitor</li><li>Printer is used to ... ...</li></ol>",
               "a": "<ol><li>... ... ... is responsible for controlling the operations of the computer. <em>— Control Unit (CU)</em></li><li>The two types of memory devices are ... ... ... and ... ... ... <em>— primary memory and secondary memory</em></li><li>... ... ... refers to the output that is shown on a display screen. <em>— Softcopy</em></li><li>CRT monitor is a ... ... ... sized monitor. <em>— large, bulky</em></li><li>Printer is used to ... ... ... <em>— produce hardcopy — to print text, pictures and other output on paper</em></li></ol>"
             },
             {
-              "q": "Match the following: Primary memory; Secondary memory; Input device; Output device; CPU",
-              "a": "<table><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Primary memory</strong></td><td>RAM</td></tr><tr><td><strong>Secondary memory</strong></td><td>Hard disk</td></tr><tr><td><strong>Input device</strong></td><td>Touchpad</td></tr><tr><td><strong>Output device</strong></td><td>Speaker</td></tr><tr><td><strong>CPU</strong></td><td>ALU</td></tr></table>"
+              "q": "Match the following:<table class=\"match-cols\"><tr><th>Column A</th><th>Column B</th></tr><tr><td><strong>(a)</strong> Primary memory</td><td>Touchpad</td></tr><tr><td><strong>(b)</strong> Secondary memory</td><td>Speaker</td></tr><tr><td><strong>(c)</strong> Input device</td><td>ALU</td></tr><tr><td><strong>(d)</strong> Output device</td><td>RAM</td></tr><tr><td><strong>(e)</strong> CPU</td><td>Hard disk</td></tr></table>",
+              "a": "<table class=\"match-cols\"><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Primary memory</strong></td><td>RAM</td></tr><tr><td><strong>Secondary memory</strong></td><td>Hard disk</td></tr><tr><td><strong>Input device</strong></td><td>Touchpad</td></tr><tr><td><strong>Output device</strong></td><td>Speaker</td></tr><tr><td><strong>CPU</strong></td><td>ALU</td></tr></table>"
             }
           ]
         },
@@ -1185,43 +1119,6 @@
               "Monitor types: CRT (bulky, old), LCD (flat), LED (modern).",
               "Printer = hardcopy device: dot matrix, ink-jet, laser."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Introduction — input devices",
-            "activity": "Show real input devices (keyboard, mouse) and match each to the notes list; pupils name the inventor facts as a quiz.",
-            "outcome": "Students can name input devices and describe the keyboard, mouse, touchpad, joystick and touch screen.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Central Processing Unit",
-            "activity": "Draw the CPU with ALU, CU and registers on the board; pupils explain one part each in their own words.",
-            "outcome": "Students can explain the CPU and its three components.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Memory Unit",
-            "activity": "Build a two-column chart: primary (RAM, ROM, cache) vs secondary (hard disk, CD, DVD, SSD).",
-            "outcome": "Students can distinguish primary from secondary memory with examples.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Output Unit",
-            "activity": "Sort flashcards into softcopy vs hardcopy; compare CRT/LCD/LED monitor pictures and printer types.",
-            "outcome": "Students can classify outputs and compare monitors and printers.",
-            "figures": []
-          },
-          {
-            "period": "Period 5",
-            "topic": "Summary + Exercise 2",
-            "activity": "Rapid-fire revision of the summary, then pupils attempt objective and short questions in pairs.",
-            "outcome": "Students can answer Exercise 2 questions on hardware.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -1407,14 +1304,12 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/ram.jpg",
-                "caption": "RAM",
-                "page": 25
+                "caption": "RAM"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/rom.jpg",
-                "caption": "ROM",
-                "page": 25
+                "caption": "ROM"
               }
             ]
           },
@@ -1437,8 +1332,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/hard-disk.jpg",
-                "caption": "Hard Disk",
-                "page": 26
+                "caption": "Hard Disk"
               }
             ]
           },
@@ -1481,8 +1375,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/dvd.jpg",
-                "caption": "DVD",
-                "page": 27
+                "caption": "DVD"
               }
             ]
           },
@@ -1501,8 +1394,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/memory-chip-card.jpg",
-                "caption": "Memory Chip/Card",
-                "page": 28
+                "caption": "Memory Chip/Card"
               }
             ]
           },
@@ -1517,8 +1409,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/pen-drives.jpg",
-                "caption": "Pen Drives",
-                "page": 28
+                "caption": "Pen Drives"
               }
             ]
           },
@@ -1533,8 +1424,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/solid-state-drive-ssd.jpg",
-                "caption": "Solid State Drive (SSD)",
-                "page": 29
+                "caption": "Solid State Drive (SSD)"
               }
             ]
           },
@@ -1584,49 +1474,42 @@
           {
             "file": "/figures/class6/ram.jpg",
             "caption": "RAM",
-            "page": 25,
             "section": "rom-read-only-memory",
             "section_title": "ROM (Read Only Memory)"
           },
           {
             "file": "/figures/class6/rom.jpg",
             "caption": "ROM",
-            "page": 25,
             "section": "rom-read-only-memory",
             "section_title": "ROM (Read Only Memory)"
           },
           {
             "file": "/figures/class6/hard-disk.jpg",
             "caption": "Hard Disk",
-            "page": 26,
             "section": "hard-disk",
             "section_title": "Hard Disk"
           },
           {
             "file": "/figures/class6/dvd.jpg",
             "caption": "DVD",
-            "page": 27,
             "section": "dvd-digital-versatile-video-disk",
             "section_title": "DVD (Digital Versatile/Video Disk)"
           },
           {
             "file": "/figures/class6/memory-chip-card.jpg",
             "caption": "Memory Chip/Card",
-            "page": 28,
             "section": "memory-chip-card",
             "section_title": "Memory Chip/Card"
           },
           {
             "file": "/figures/class6/pen-drives.jpg",
             "caption": "Pen Drives",
-            "page": 28,
             "section": "pen-drive",
             "section_title": "Pen Drive"
           },
           {
             "file": "/figures/class6/solid-state-drive-ssd.jpg",
             "caption": "Solid State Drive (SSD)",
-            "page": 29,
             "section": "solid-state-drive-ssd",
             "section_title": "Solid State Drive (SSD)"
           }
@@ -1702,20 +1585,20 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) The primary memory stores operating systems, data, and application programs permanently<br>(b) RAM is non-volatile memory<br>(c) ROM is used to store data and instructions while they are being used, or waiting to be processed<br>(d) Hard disk is a circular optical disk with a storage capacity of 700 MB<br>(e) A memory card is connected to the USB port of the computer",
+              "q": "Rewrite the incorrect statements:<ol><li>The primary memory stores operating systems, data, and application programs permanently</li><li>RAM is non-volatile memory</li><li>ROM is used to store data and instructions while they are being used, or waiting to be processed</li><li>Hard disk is a circular optical disk with a storage capacity of 700 MB</li><li>A memory card is connected to the USB port of the computer</li></ol>",
               "a": "<ol><li>The <strong>secondary memory</strong> stores operating systems, data and application programs permanently. (Primary memory holds them only while the computer is running.)</li><li>RAM is <strong>volatile</strong> memory — it loses its contents when the power is switched off.</li><li>RAM is used to store data and instructions while they are being used, or waiting to be processed. (ROM holds fixed start-up instructions.)</li><li>A <strong>CD</strong> is a circular optical disk with a storage capacity of about 700 MB. (A hard disk is magnetic and holds far more.)</li><li>A <strong>pen drive</strong> is connected to the USB port of the computer.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) RAM is used for the permanent storage of programs<br>(b) A typical DVD has a storage capacity of 700 MB. Memory card is used for portable electronic devices like mobile phones, smartphones, tablets, etc<br>(c) Pen drive is not used to transfer audio, video, and data files from one computer to another<br>(d) SSD is a non-volatile memory with high storage capacity",
+              "q": "State whether the following are true or false:<ol><li>RAM is used for the permanent storage of programs</li><li>A typical DVD has a storage capacity of 700 MB. Memory card is used for portable electronic devices like mobile phones, smartphones, tablets, etc</li><li>Pen drive is not used to transfer audio, video, and data files from one computer to another</li><li>SSD is a non-volatile memory with high storage capacity</li></ol>",
               "a": "<ol><li>False. RAM is used for <strong>temporary</strong> storage. Permanent storage is the job of secondary memory such as a hard disk or SSD.</li><li>False. A typical <strong>CD</strong> holds about 700 MB; a DVD holds much more (about 4.7 GB). A memory card is used for portable electronic devices.</li><li>False. A pen drive <strong>is</strong> used to transfer audio, video and data files from one computer to another.</li><li>True. SSD is a non-volatile memory with high storage capacity.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) The types of memory devices are ... ... ... and ... ... <br>(b) The primary memory is used for ... ... <br>(c) ... ... ... is a volatile memory<br>(d) Hard disk use ... ... ... to store data<br>(e) SSD is a high-speed ... ... ... memory device",
+              "q": "Fill in the blanks:<ol><li>The types of memory devices are ... ... ... and ... ...</li><li>The primary memory is used for ... ...</li><li>... ... ... is a volatile memory</li><li>Hard disk use ... ... ... to store data</li><li>SSD is a high-speed ... ... ... memory device</li></ol>",
               "a": "<ol><li>The types of memory devices are ... ... ... and ... ... ... <em>— primary memory and secondary memory</em></li><li>The primary memory is used for ... ... ... <em>— temporary storage while the computer is working</em></li><li>... ... ... is a volatile memory. <em>— RAM (Random Access Memory)</em></li><li>Hard disk use ... ... ... to store data. <em>— magnetic platters</em></li><li>SSD is a high-speed ... ... ... memory device. <em>— non-volatile storage</em></li></ol>"
             },
             {
-              "q": "Match the following: Primary memory; RAM; DVD; Memory card; Pen drive",
-              "a": "<table><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Primary memory</strong></td><td>directly accessed by CPU</td></tr><tr><td><strong>RAM</strong></td><td>volatile memory</td></tr><tr><td><strong>DVD</strong></td><td>optical memory</td></tr><tr><td><strong>Memory card</strong></td><td>common storage device for portable devices</td></tr><tr><td><strong>Pen drive</strong></td><td>data transfer device</td></tr></table>"
+              "q": "Match the following:<table class=\"match-cols\"><tr><th>Column A</th><th>Column B</th></tr><tr><td><strong>(a)</strong> Primary memory</td><td>optical memory</td></tr><tr><td><strong>(b)</strong> RAM</td><td>common storage device for portable devices</td></tr><tr><td><strong>(c)</strong> DVD</td><td>data transfer device</td></tr><tr><td><strong>(d)</strong> Memory card</td><td>directly accessed by CPU</td></tr><tr><td><strong>(e)</strong> Pen drive</td><td>volatile memory</td></tr></table>",
+              "a": "<table class=\"match-cols\"><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Primary memory</strong></td><td>directly accessed by CPU</td></tr><tr><td><strong>RAM</strong></td><td>volatile memory</td></tr><tr><td><strong>DVD</strong></td><td>optical memory</td></tr><tr><td><strong>Memory card</strong></td><td>common storage device for portable devices</td></tr><tr><td><strong>Pen drive</strong></td><td>data transfer device</td></tr></table>"
             }
           ]
         },
@@ -1794,36 +1677,6 @@
               "Pen drive: USB stick for carrying files between computers.",
               "SSD: flash-based, no moving parts — 10× faster reads than HDD."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Introduction + ROM",
-            "activity": "Explain volatile vs non-volatile with a live demo (unsaved file vs saved file); complete the RAM-vs-ROM table together.",
-            "outcome": "Students can compare RAM and ROM and name their types.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Hard disk, CD and DVD",
-            "activity": "Pass around a real hard disk and disks if available; pupils record capacity and use of each in a table.",
-            "outcome": "Students can describe the hard disk, CD and DVD with capacities.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Memory card, pen drive and SSD",
-            "activity": "Show a memory card and pen drive; discuss why SSDs are replacing hard disks (speed, durability, power).",
-            "outcome": "Students can describe portable and modern storage and SSD advantages.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 3",
-            "activity": "Memory-device quiz (which device for which job?), then short and long questions from Exercise 3.",
-            "outcome": "Students can choose storage devices and answer Exercise 3.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -1929,8 +1782,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/types-of-software.jpg",
-                "caption": "Types of Software",
-                "page": 33
+                "caption": "Types of Software"
               },
               {
                 "type": "diagram",
@@ -1998,8 +1850,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/application-softwares.jpg",
-                "caption": "Application Softwares",
-                "page": 34
+                "caption": "Application Softwares"
               }
             ]
           },
@@ -2007,7 +1858,6 @@
             "id": "summary-at-a-glance",
             "number": "",
             "title": "Summary at a Glance",
-            "page": null,
             "blocks": [
               {
                 "type": "p",
@@ -2024,14 +1874,12 @@
           {
             "file": "/figures/class6/types-of-software.jpg",
             "caption": "Types of Software",
-            "page": 33,
             "section": "types-of-software",
             "section_title": "Types of Software"
           },
           {
             "file": "/figures/class6/application-softwares.jpg",
             "caption": "Application Softwares",
-            "page": 34,
             "section": "application-software",
             "section_title": "Application Software"
           }
@@ -2086,20 +1934,20 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Software is a set of data and information<br>(b) We can touch software as hardware<br>(c) System software is used to solve the particular problem of the user<br>(d) MS Office package is system software<br>(e) Application software is hardware-oriented software",
+              "q": "Rewrite the incorrect statements:<ol><li>Software is a set of data and information</li><li>We can touch software as hardware</li><li>System software is used to solve the particular problem of the user</li><li>MS Office package is system software</li><li>Application software is hardware-oriented software</li></ol>",
               "a": "<ol><li>Software is a set of <strong>programs</strong> and related data that tell the hardware what to do.</li><li>We <strong>cannot</strong> touch software the way we can touch hardware — software has no physical form.</li><li><strong>Application software</strong> is used to solve the particular problem of the user.</li><li>MS Office is <strong>application</strong> software.</li><li><strong>System</strong> software is hardware-oriented software.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) The software directs and guides the operation of input, process, and output<br>(b) System software is user-oriented software<br>(c) Operating system is system software<br>(d) Applications software can be installed on the computer depending on the user's requirement<br>(e) Ms Word is a system software",
+              "q": "State whether the following are true or false:<ol><li>The software directs and guides the operation of input, process, and output</li><li>System software is user-oriented software</li><li>Operating system is system software</li><li>Applications software can be installed on the computer depending on the user's requirement</li><li>Ms Word is a system software</li></ol>",
               "a": "<ol><li>True. The software directs and guides the operation of input, process, and output.</li><li>False. Application software is user-oriented. <strong>System</strong> software is hardware-oriented.</li><li>True. Operating system is system software.</li><li>True. Applications software can be installed on the computer depending on the user's requirement.</li><li>False. MS Word is <strong>application</strong> software.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) Software is used to give ..... ... to the hardware<br>(b) ... .. ... software allows editing photos<br>(c) System software is usually provided by the ... :<br>(d) ... and .. .. .. are examples of application software<br>(e) Application software ..... ... requires system software for its operation",
+              "q": "Fill in the blanks:<ol><li>Software is used to give ..... ... to the hardware</li><li>... .. ... software allows editing photos</li><li>System software is usually provided by the ... :</li><li>... and .. .. .. are examples of application software</li><li>Application software ..... ... requires system software for its operation</li></ol>",
               "a": "<ol><li>Software is used to give ..... ... to the hardware. <em>— instructions</em></li><li>... .. ... software allows editing photos. <em>— Photo-editing (image editing)</em></li><li>System software is usually provided by the ... : <em>— computer manufacturer</em></li><li>... and .. .. .. are examples of application software. <em>— MS Word and MS Excel</em></li><li>Application software ..... ... requires system software for its operation. <em>— always</em></li></ol>"
             },
             {
-              "q": "Match the following: System software; Applications software; Operating software; Adobe Photoshop; Android",
-              "a": "<table><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>System software</strong></td><td>A hardware-oriented software that is used to control, manage and operate hardware devices</td></tr><tr><td><strong>Applications software</strong></td><td>A user-oriented software that is used to solve the problem of the user and makes users’ tasks easier</td></tr><tr><td><strong>Operating software</strong></td><td>A set of programs and related data</td></tr><tr><td><strong>Adobe Photoshop</strong></td><td>Image editing software</td></tr><tr><td><strong>Android</strong></td><td>Operating system</td></tr></table>"
+              "q": "Match the following:<table class=\"match-cols\"><tr><th>Column A</th><th>Column B</th></tr><tr><td><strong>(a)</strong> System software</td><td>A set of programs and related data</td></tr><tr><td><strong>(b)</strong> Applications software</td><td>Image editing software</td></tr><tr><td><strong>(c)</strong> Operating software</td><td>Operating system</td></tr><tr><td><strong>(d)</strong> Adobe Photoshop</td><td>A hardware-oriented software that is used to control, manage and operate hardware devices</td></tr><tr><td><strong>(e)</strong> Android</td><td>A user-oriented software that is used to solve the problem of the user and makes users’ tasks easier</td></tr></table>",
+              "a": "<table class=\"match-cols\"><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>System software</strong></td><td>A hardware-oriented software that is used to control, manage and operate hardware devices</td></tr><tr><td><strong>Applications software</strong></td><td>A user-oriented software that is used to solve the problem of the user and makes users’ tasks easier</td></tr><tr><td><strong>Operating software</strong></td><td>A set of programs and related data</td></tr><tr><td><strong>Adobe Photoshop</strong></td><td>Image editing software</td></tr><tr><td><strong>Android</strong></td><td>Operating system</td></tr></table>"
             }
           ]
         },
@@ -2170,36 +2018,6 @@
               "Application = solves user problems, optional, needs system software.",
               "Exam favorite: give the 4-row comparison table from memory."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Types of Software",
-            "activity": "Define software; pupils sort example cards (Windows, MS Word, driver, game, antivirus…) into two columns.",
-            "outcome": "Students can define software and classify it into two types.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "System Software",
-            "activity": "Discuss why the computer cannot start without an OS; list the system software on the lab computers.",
-            "outcome": "Students can explain system software with examples.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Application Software + comparison table",
-            "activity": "Name the application software pupils use daily; fill the 4-row system-vs-application table on the board.",
-            "outcome": "Students can compare the two software types point by point.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 4",
-            "activity": "Recite the comparison table from memory, then answer Exercise 4 objective and short questions.",
-            "outcome": "Students can answer Exercise 4 on software.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -2302,14 +2120,12 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/various-icons-found-in-windows.jpg",
-                "caption": "Various Icons Found in Windows",
-                "page": 43
+                "caption": "Various Icons Found in Windows"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/login-screen-of-windows-11.jpg",
-                "caption": "Login Screen of Windows 11",
-                "page": 44
+                "caption": "Login Screen of Windows 11"
               },
               {
                 "type": "diagram",
@@ -2359,8 +2175,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/start-menu.jpg",
-                "caption": "Start Menu",
-                "page": 42
+                "caption": "Start Menu"
               }
             ]
           },
@@ -2379,14 +2194,12 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/desktop-of-window-11.jpg",
-                "caption": "Desktop of Window 11",
-                "page": 41
+                "caption": "Desktop of Window 11"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/shut-down-dialog-window-to-turn-the-computer-off-sleep-and.jpg",
-                "caption": "Shut Down Dialog Window to Turn the Computer Off, Sleep and Restart",
-                "page": 44
+                "caption": "Shut Down Dialog Window to Turn the Computer Off, Sleep and Restart"
               }
             ]
           },
@@ -2581,35 +2394,30 @@
           {
             "file": "/figures/class6/desktop-of-window-11.jpg",
             "caption": "Desktop of Window 11",
-            "page": 41,
             "section": "logging-into-computer-system",
             "section_title": "Logging into Computer System"
           },
           {
             "file": "/figures/class6/start-menu.jpg",
             "caption": "Start Menu",
-            "page": 42,
             "section": "start-menu",
             "section_title": "Start Menu"
           },
           {
             "file": "/figures/class6/various-icons-found-in-windows.jpg",
             "caption": "Various Icons Found in Windows",
-            "page": 43,
             "section": "components-of-windows",
             "section_title": "Components of Windows"
           },
           {
             "file": "/figures/class6/login-screen-of-windows-11.jpg",
             "caption": "Login Screen of Windows 11",
-            "page": 44,
             "section": "components-of-windows",
             "section_title": "Components of Windows"
           },
           {
             "file": "/figures/class6/shut-down-dialog-window-to-turn-the-computer-off-sleep-and.jpg",
             "caption": "Shut Down Dialog Window to Turn the Computer Off, Sleep and Restart",
-            "page": 44,
             "section": "logging-into-computer-system",
             "section_title": "Logging into Computer System"
           }
@@ -2733,20 +2541,20 @@
           ],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) The operating system is application software<br>(b) The operating system doesn't control the computer's hardware and all the software<br>(c) The OS doesn't manage the resources of the computer system<br>(d) The Examples of OS are MS Word, Adobe Photoshop, and MS Paint<br>(e) The OS doesn't provide any security on the computer",
+              "q": "Rewrite the incorrect statements:<ol><li>The operating system is application software</li><li>The operating system doesn't control the computer's hardware and all the software</li><li>The OS doesn't manage the resources of the computer system</li><li>The Examples of OS are MS Word, Adobe Photoshop, and MS Paint</li><li>The OS doesn't provide any security on the computer</li></ol>",
               "a": "<ol><li>The operating system is <strong>system</strong> software.</li><li>The operating system <strong>does</strong> control the computer’s hardware and all the other software.</li><li>The OS <strong>does</strong> manage the resources of the computer system.</li><li>Examples of operating systems are <strong>Windows, Linux and Android</strong> (MS Word, Adobe Photoshop and MS Paint are application software).</li><li>The OS <strong>does</strong> provide security on the computer.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) The OS is used to solve the problem of the user and make user tasks easier<br>(b) MS Paint is an example of an operating system<br>(c) OS acts as the manager between the user, and the computer<br>(d) Windows is developed by Microsoft Corporation<br>(e) Recycle Bin is the place that contains files and folders",
+              "q": "State whether the following are true or false:<ol><li>The OS is used to solve the problem of the user and make user tasks easier</li><li>MS Paint is an example of an operating system</li><li>OS acts as the manager between the user, and the computer</li><li>Windows is developed by Microsoft Corporation</li><li>Recycle Bin is the place that contains files and folders</li></ol>",
               "a": "<ol><li>False. That describes <strong>application</strong> software. The OS manages the computer itself so that applications can run.</li><li>False. MS Paint is application software, not an operating system.</li><li>True. OS acts as the manager between the user, and the computer.</li><li>True. Windows is developed by Microsoft Corporation.</li><li>True. Recycle Bin is the place that contains files and folders.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) The OS makes a computer system ... ... <br>(b) I/O management refers to ... ... <br>(c) ... ... ... refers to the process of managing CPU and its processing task<br>(d) GUI environment is full of ... ... <br>(e) This PC in Windows shows ... ... ",
+              "q": "Fill in the blanks:<ol><li>The OS makes a computer system ... ...</li><li>I/O management refers to ... ...</li><li>... ... ... refers to the process of managing CPU and its processing task</li><li>GUI environment is full of ... ...</li><li>This PC in Windows shows ... ...</li></ol>",
               "a": "<ol><li>The OS makes a computer system ... ... ... <em>— easy and convenient to use</em></li><li>I/O management refers to ... ... ... <em>— managing the input and output devices</em></li><li>... ... ... refers to the process of managing CPU and its processing task. <em>— Process management</em></li><li>GUI environment is full of ... ... ... <em>— graphical objects such as icons, windows and menus</em></li><li>This PC in Windows shows ... ... ... <em>— the drives, folders and files available on the computer</em></li></ol>"
             },
             {
-              "q": "Match the following: Security management; GUI; Windows; Folder; Icon",
-              "a": "<table><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Security management</strong></td><td>function of OS</td></tr><tr><td><strong>GUI</strong></td><td>graphical object used in GUI</td></tr><tr><td><strong>Windows</strong></td><td>GUI based OS</td></tr><tr><td><strong>Folder</strong></td><td>container to store files</td></tr><tr><td><strong>Icon</strong></td><td>system software</td></tr></table>"
+              "q": "Match the following:<table class=\"match-cols\"><tr><th>Column A</th><th>Column B</th></tr><tr><td><strong>(a)</strong> Security management</td><td>GUI based OS</td></tr><tr><td><strong>(b)</strong> GUI</td><td>container to store files</td></tr><tr><td><strong>(c)</strong> Windows</td><td>system software</td></tr><tr><td><strong>(d)</strong> Folder</td><td>function of OS</td></tr><tr><td><strong>(e)</strong> Icon</td><td>graphical object used in GUI</td></tr></table>",
+              "a": "<table class=\"match-cols\"><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Security management</strong></td><td>function of OS</td></tr><tr><td><strong>GUI</strong></td><td>graphical object used in GUI</td></tr><tr><td><strong>Windows</strong></td><td>GUI based OS</td></tr><tr><td><strong>Folder</strong></td><td>container to store files</td></tr><tr><td><strong>Icon</strong></td><td>system software</td></tr></table>"
             }
           ]
         },
@@ -2826,42 +2634,6 @@
               "Right-click for New / Copy / Cut / Paste / Rename / Delete.",
               "Accessories: Calculator, Notepad, Paint, WordPad, Media Player."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Components of Windows + Recycle Bin",
-            "activity": "Tour the lab desktop: point out background, icons, Start menu, taskbar; delete and restore a practice file.",
-            "outcome": "Students can identify desktop parts and use the Recycle Bin.",
-            "figures": [
-              "figures/class6/desktop-of-window-11.jpg",
-              "figures/class6/various-icons-found-in-windows.jpg"
-            ]
-          },
-          {
-            "period": "Period 2",
-            "topic": "Start Menu + logging in + power options",
-            "activity": "Pupils log in themselves, open programs from Start, then practise Sleep / Shut down / Restart on one machine.",
-            "outcome": "Students can log in and choose the right power option.",
-            "figures": [
-              "figures/class6/start-menu.jpg",
-              "figures/class6/login-screen-of-windows-11.jpg"
-            ]
-          },
-          {
-            "period": "Period 3",
-            "topic": "Files and folders",
-            "activity": "Lab drill: create a folder, create/rename/copy/move/delete files inside it, step by step with the notes.",
-            "outcome": "Students can manage files and folders with the mouse and keyboard.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Windows Accessories + Summary + Exercise 5",
-            "activity": "Open Calculator, Notepad, Paint, WordPad and Media Player; quick tour of each, then Exercise 5 questions and practicals.",
-            "outcome": "Students can name accessories and answer Exercise 5.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions",
@@ -2991,32 +2763,27 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/application-areas-of-ict.jpg",
-                "caption": "Application Areas of ICT",
-                "page": 52
+                "caption": "Application Areas of ICT"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/ict-in-education.jpg",
-                "caption": "ICT in Education",
-                "page": 52
+                "caption": "ICT in Education"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/ict-in-banking.jpg",
-                "caption": "ICT in Banking",
-                "page": 53
+                "caption": "ICT in Banking"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/ict-in-business.jpg",
-                "caption": "ICT in Business",
-                "page": 53
+                "caption": "ICT in Business"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/ict-in-communication-and-entertainment.jpg",
-                "caption": "ICT in Communication and Entertainment",
-                "page": 54
+                "caption": "ICT in Communication and Entertainment"
               }
             ]
           },
@@ -3096,35 +2863,30 @@
           {
             "file": "/figures/class6/application-areas-of-ict.jpg",
             "caption": "Application Areas of ICT",
-            "page": 52,
             "section": "advantages-of-ict-in-education",
             "section_title": "Advantages of ICT in Education"
           },
           {
             "file": "/figures/class6/ict-in-education.jpg",
             "caption": "ICT in Education",
-            "page": 52,
             "section": "advantages-of-ict-in-education",
             "section_title": "Advantages of ICT in Education"
           },
           {
             "file": "/figures/class6/ict-in-banking.jpg",
             "caption": "ICT in Banking",
-            "page": 53,
             "section": "advantages-of-ict-in-education",
             "section_title": "Advantages of ICT in Education"
           },
           {
             "file": "/figures/class6/ict-in-business.jpg",
             "caption": "ICT in Business",
-            "page": 53,
             "section": "advantages-of-ict-in-education",
             "section_title": "Advantages of ICT in Education"
           },
           {
             "file": "/figures/class6/ict-in-communication-and-entertainment.jpg",
             "caption": "ICT in Communication and Entertainment",
-            "page": 54,
             "section": "advantages-of-ict-in-education",
             "section_title": "Advantages of ICT in Education"
           }
@@ -3179,16 +2941,16 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) ICT is a broad field combining computer hardware, software, and data<br>(b) ICT doesn't simplify information sharing<br>(c) ICT doesn't help to automate paper-based manual procedures and processes<br>(d) Cyber law is the legal provision developed by the person<br>(e) Cyber law provides provisions for rewarding cybercriminals. State whether the following statements are true or false. Rewrite each false statement to make it a true statement:<br>(f) ICT is not used in the entertainment sector<br>(g) The full form of ICT is International Computing Technology<br>(h) ICT is used in the banking sector to replace the manual system<br>(i) The cyber law in Nepal is called Electronic Transaction Act 2063<br>(j) Cyber law doesn't address the legal issues related to intellectual property",
+              "q": "Rewrite the incorrect statements:<ol><li>ICT is a broad field combining computer hardware, software, and data</li><li>ICT doesn't simplify information sharing</li><li>ICT doesn't help to automate paper-based manual procedures and processes</li><li>Cyber law is the legal provision developed by the person</li><li>Cyber law provides provisions for rewarding cybercriminals. State whether the following statements are true or false. Rewrite each false statement to make it a true statement:</li><li>ICT is not used in the entertainment sector</li><li>The full form of ICT is International Computing Technology</li><li>ICT is used in the banking sector to replace the manual system</li><li>The cyber law in Nepal is called Electronic Transaction Act 2063</li><li>Cyber law doesn't address the legal issues related to intellectual property</li></ol>",
               "a": "<ol><li>ICT is a broad field combining computer hardware, software, <strong>communication</strong> and data.</li><li>ICT <strong>simplifies</strong> information sharing.</li><li>ICT <strong>helps to automate</strong> paper-based manual procedures and processes.</li><li>Cyber law is the legal provision developed by the <strong>government</strong>.</li><li>Cyber law provides provisions for <strong>punishing</strong> cybercriminals.</li><li>False. ICT <strong>is</strong> used in the entertainment sector — for video editing, special effects, animations, cartoon movies and booking cinema tickets online.</li><li>False. The full form of ICT is <strong>Information and Communication Technology</strong>.</li><li>True. In the banking sector manual records are replaced by <strong>core banking software</strong>.</li><li>True. The Electronic Transaction Act, 2063 (2008 A.D.) is the cyber law of Nepal.</li><li>False. Cyber law <strong>does</strong> address intellectual property — Intellectual Property Law is one of its five areas.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) ICT is a broad field combining <br>(b) ICT supports students to <br>(c) In business, computers are used to keep information on <br>(d) ... ... is used to describe the legal issues related to using of ICT<br>(e) Electronic Transaction Act of Nepal is developed on ... ",
+              "q": "Fill in the blanks:<ol><li>ICT is a broad field combining</li><li>ICT supports students to</li><li>In business, computers are used to keep information on</li><li>... ... is used to describe the legal issues related to using of ICT</li><li>Electronic Transaction Act of Nepal is developed on ...</li></ol>",
               "a": "<ol><li>ICT is a broad field combining ... <em>— hardware, software and communication</em></li><li>ICT supports students to ... <em>— learn and find information</em></li><li>In business, computers are used to keep information on ... <em>— customers, products and transactions</em></li><li>... ... is used to describe the legal issues related to using of ICT. <em>— Cyber law</em></li><li>Electronic Transaction Act of Nepal is developed on ... ... <em>— 2063 (the Electronic Transaction Act, 2063)</em></li></ol>"
             },
             {
-              "q": "Match the following: Online class; Debit and credit card; Online shopping; E-mail; Animation",
-              "a": "<table><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Online class</strong></td><td>ICT in education</td></tr><tr><td><strong>Debit and credit card</strong></td><td>ICT in banking</td></tr><tr><td><strong>Online shopping</strong></td><td>ICT in business</td></tr><tr><td><strong>E-mail</strong></td><td>ICT in communication</td></tr><tr><td><strong>Animation</strong></td><td>ICT in the entertainment</td></tr></table>"
+              "q": "Match the following:<table class=\"match-cols\"><tr><th>Column A</th><th>Column B</th></tr><tr><td><strong>(a)</strong> Online class</td><td>ICT in business</td></tr><tr><td><strong>(b)</strong> Debit and credit card</td><td>ICT in communication</td></tr><tr><td><strong>(c)</strong> Online shopping</td><td>ICT in the entertainment</td></tr><tr><td><strong>(d)</strong> E-mail</td><td>ICT in education</td></tr><tr><td><strong>(e)</strong> Animation</td><td>ICT in banking</td></tr></table>",
+              "a": "<table class=\"match-cols\"><tr><th>Item</th><th>Matches</th></tr><tr><td><strong>Online class</strong></td><td>ICT in education</td></tr><tr><td><strong>Debit and credit card</strong></td><td>ICT in banking</td></tr><tr><td><strong>Online shopping</strong></td><td>ICT in business</td></tr><tr><td><strong>E-mail</strong></td><td>ICT in communication</td></tr><tr><td><strong>Animation</strong></td><td>ICT in the entertainment</td></tr></table>"
             }
           ]
         },
@@ -3267,36 +3029,6 @@
               "Covers cybercrime and electronic/financial transactions.",
               "Punishes cyber criminals as per the crime; promotes IT growth."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Introduction + advantages of ICT in education",
-            "activity": "List the ICT tools used in this school; pupils give one example per advantage from their own classes.",
-            "outcome": "Students can define ICT and list its educational advantages.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Applications of ICT",
-            "activity": "Group task: each group presents one sector (education, banking, business, communication/entertainment).",
-            "outcome": "Students can describe ICT uses in five sectors.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Cyber law + cyber law in Nepal",
-            "activity": "Discuss real cases (hacking, piracy, fraud); match each to an area of cyber law and to the ETA 2063.",
-            "outcome": "Students can explain cyber law areas and Nepal's Electronic Transaction Act.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 6",
-            "activity": "Debate: “Is cyber law strong enough?” then answer Exercise 6 questions.",
-            "outcome": "Students can answer Exercise 6 on ICT and cyber law.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -3471,8 +3203,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/world-wide-web.jpg",
-                "caption": "World Wide Web",
-                "page": 60
+                "caption": "World Wide Web"
               }
             ]
           },
@@ -3519,14 +3250,12 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/web-browser.jpg",
-                "caption": "Web Browser",
-                "page": 61
+                "caption": "Web Browser"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/webpage.jpg",
-                "caption": "Webpage",
-                "page": 61
+                "caption": "Webpage"
               }
             ]
           },
@@ -3541,8 +3270,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/search-engine.jpg",
-                "caption": "Search Engine",
-                "page": 63
+                "caption": "Search Engine"
               }
             ]
           },
@@ -3564,8 +3292,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/google.jpg",
-                "caption": "Google",
-                "page": 63
+                "caption": "Google"
               }
             ]
           },
@@ -3625,8 +3352,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/email.jpg",
-                "caption": "Email",
-                "page": 64
+                "caption": "Email"
               }
             ]
           },
@@ -3665,42 +3391,36 @@
           {
             "file": "/figures/class6/world-wide-web.jpg",
             "caption": "World Wide Web",
-            "page": 60,
             "section": "world-wide-web-www",
             "section_title": "World Wide Web (WWW)"
           },
           {
             "file": "/figures/class6/web-browser.jpg",
             "caption": "Web Browser",
-            "page": 61,
             "section": "web-browser",
             "section_title": "Web Browser"
           },
           {
             "file": "/figures/class6/webpage.jpg",
             "caption": "Webpage",
-            "page": 61,
             "section": "web-browser",
             "section_title": "Web Browser"
           },
           {
             "file": "/figures/class6/search-engine.jpg",
             "caption": "Search Engine",
-            "page": 63,
             "section": "search-engine",
             "section_title": "Search Engine"
           },
           {
             "file": "/figures/class6/google.jpg",
             "caption": "Google",
-            "page": 63,
             "section": "process-of-searching-required-information-from-t",
             "section_title": "Process of Searching Required Information from the Internet"
           },
           {
             "file": "/figures/class6/email.jpg",
             "caption": "Email",
-            "page": 64,
             "section": "disadvantages-of-using-email",
             "section_title": "Disadvantages of using Email"
           }
@@ -3771,15 +3491,15 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Internet is not the world's largest computer network<br>(b) Internet connectivity is provided by educational service providers<br>(c) Internet doesn't support email communication<br>(d) WWW refers to World Whole Web<br>(e) A webpage is software",
+              "q": "Rewrite the incorrect statements:<ol><li>Internet is not the world's largest computer network</li><li>Internet connectivity is provided by educational service providers</li><li>Internet doesn't support email communication</li><li>WWW refers to World Whole Web</li><li>A webpage is software</li></ol>",
               "a": "<ol><li>The Internet <strong>is</strong> the world’s largest computer network.</li><li>Internet connectivity is provided by <strong>Internet Service Providers (ISPs)</strong>.</li><li>The Internet <strong>does</strong> support email communication.</li><li>WWW refers to <strong>World Wide Web</strong>.</li><li>A webpage is a <strong>document</strong> on the World Wide Web, not software.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) Internet is a network of networks<br>(b) Web browser is a server that stores webpages<br>(c) Website is a collection of webpages that are all related to each other<br>(d) URL refers to Uniform Reliable Location<br>(e) Email is a printed letter sent to the receiver",
+              "q": "State whether the following are true or false:<ol><li>Internet is a network of networks</li><li>Web browser is a server that stores webpages</li><li>Website is a collection of webpages that are all related to each other</li><li>URL refers to Uniform Reliable Location</li><li>Email is a printed letter sent to the receiver</li></ol>",
               "a": "<ol><li>True. Internet is a network of networks.</li><li>False. A web browser is an <strong>application on the user’s computer</strong> that displays webpages. The server is the computer that stores them.</li><li>True. Website is a collection of webpages that are all related to each other.</li><li>False. URL refers to <strong>Uniform Resource Locator</strong>.</li><li>False. Email is an <strong>electronic</strong> message sent over the internet to the receiver.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) .. is the collection of computers connected by network cables or through satellite links<br>(b) is a user-based application software that allows a user to interact and display webpages<br>(c) .. is a unique identifier used to locate a resource on the Internet<br>(d) .. is a collection of web pages that are all related to each other<br>(e) Email is used to ... ... ",
+              "q": "Fill in the blanks:<ol><li>.. is the collection of computers connected by network cables or through satellite links</li><li>is a user-based application software that allows a user to interact and display webpages</li><li>.. is a unique identifier used to locate a resource on the Internet</li><li>.. is a collection of web pages that are all related to each other</li><li>Email is used to ... ...</li></ol>",
               "a": "<ol><li>.. is the collection of computers connected by network cables or through satellite links. <em>— The internet</em></li><li>is a user-based application software that allows a user to interact and display webpages. <em>— A web browser</em></li><li>.. is a unique identifier used to locate a resource on the Internet. <em>— A URL (Uniform Resource Locator)</em></li><li>.. is a collection of web pages that are all related to each other. <em>— A website</em></li><li>Email is used to ... ... ... <em>— send and receive messages electronically</em></li></ol>"
             }
           ]
@@ -3861,36 +3581,6 @@
               "Pros: paperless, free, fast, simple, anywhere.",
               "Cons: overload, malware in attachments, needs replies, less personal."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Introduction + uses of the Internet",
-            "activity": "Survey the class: who uses the Internet for what? Build the uses list, then split impacts into positive/negative columns.",
-            "outcome": "Students can state Internet uses and impacts with examples.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "WWW, browser, URL, website + search engines",
-            "activity": "Draw the book/web analogy; pupils dissect a real URL on the board and run a guided search step by step.",
-            "outcome": "Students can use web vocabulary and search the Internet.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Email: intro, advantages, disadvantages",
-            "activity": "Write a class email address on the board; pupils label its parts and argue pros vs cons in two teams.",
-            "outcome": "Students can explain email, addresses, advantages and disadvantages.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 7",
-            "activity": "Lab (if online): open a browser, search a topic, note the steps; then Exercise 7 questions.",
-            "outcome": "Students can search the web and answer Exercise 7.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -3985,7 +3675,6 @@
             "id": "what-is-malware",
             "number": "",
             "title": "What is Malware?",
-            "page": null,
             "blocks": [
               {
                 "type": "p",
@@ -4045,8 +3734,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/symptoms-of-malware.jpg",
-                "caption": "Symptoms of Malware",
-                "page": 71
+                "caption": "Symptoms of Malware"
               },
               {
                 "type": "diagram",
@@ -4083,8 +3771,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/antivirus-softwares.jpg",
-                "caption": "Antivirus Softwares",
-                "page": 72
+                "caption": "Antivirus Softwares"
               }
             ]
           },
@@ -4115,14 +3802,12 @@
           {
             "file": "/figures/class6/symptoms-of-malware.jpg",
             "caption": "Symptoms of Malware",
-            "page": 71,
             "section": "prevention-from-malware",
             "section_title": "Prevention from Malware"
           },
           {
             "file": "/figures/class6/antivirus-softwares.jpg",
             "caption": "Antivirus Softwares",
-            "page": 72,
             "section": "antivirus-software",
             "section_title": "Antivirus Software"
           }
@@ -4177,15 +3862,15 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Malware is a program or file that is useful to a computer, computer network, or server<br>(b) The main aim of malicious programs is to prevent systems and networks<br>(c) When a computer is infected with malware, it will make the computer's operation fast<br>(d) Malware can be prevented by using a pen drive without scanning before using it<br>(e) An antivirus is a security program designed to infect the computer with harmful files",
+              "q": "Rewrite the incorrect statements:<ol><li>Malware is a program or file that is useful to a computer, computer network, or server</li><li>The main aim of malicious programs is to prevent systems and networks</li><li>When a computer is infected with malware, it will make the computer's operation fast</li><li>Malware can be prevented by using a pen drive without scanning before using it</li><li>An antivirus is a security program designed to infect the computer with harmful files</li></ol>",
               "a": "<ol><li>Malware is a program or file that is <strong>harmful</strong> to a computer, computer network or server.</li><li>The main aim of malicious programs is to <strong>disrupt or damage</strong> systems and networks.</li><li>When a computer is infected with malware it makes the computer’s operation <strong>slow</strong>.</li><li>Malware can be prevented by <strong>scanning</strong> a pen drive before using it.</li><li>An antivirus is a security program designed to <strong>protect</strong> the computer from harmful files.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) Malware is a program that disrupts the normal functioning of the computer<br>(b) The computer virus is a useful program<br>(c) You must scan the pen drive before using it on the computer<br>(d) When a computer is infected by malware, the antivirus software can be automatically disabled<br>(e) The use of antivirus decreases the speed of the computer",
+              "q": "State whether the following are true or false:<ol><li>Malware is a program that disrupts the normal functioning of the computer</li><li>The computer virus is a useful program</li><li>You must scan the pen drive before using it on the computer</li><li>When a computer is infected by malware, the antivirus software can be automatically disabled</li><li>The use of antivirus decreases the speed of the computer</li></ol>",
               "a": "<ol><li>True. Malware is a program that disrupts the normal functioning of the computer.</li><li>False. A computer virus is a <strong>harmful</strong> program.</li><li>True. You must scan the pen drive before using it on the computer.</li><li>True. When a computer is infected by malware, the antivirus software can be automatically disabled.</li><li>True. The use of antivirus decreases the speed of the computer.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) The term malware is derived from two terms ... ... ... and ... ... <br>(b) A ... ... ... is a program that disrupts the normal operation of the computer<br>(c) When a computer is infected by malware, the computer ... ... <br>(d) To avoid viruses, download only from ... ... <br>(e) ... ... ... is a program designed to detect and remove viruses from the computer",
+              "q": "Fill in the blanks:<ol><li>The term malware is derived from two terms ... ... ... and ... ...</li><li>A ... ... ... is a program that disrupts the normal operation of the computer</li><li>When a computer is infected by malware, the computer ... ...</li><li>To avoid viruses, download only from ... ...</li><li>... ... ... is a program designed to detect and remove viruses from the computer</li></ol>",
               "a": "<ol><li>The term malware is derived from two terms ... ... ... and ... ... ... <em>— malicious and software</em></li><li>A ... ... ... is a program that disrupts the normal operation of the computer. <em>— computer virus</em></li><li>When a computer is infected by malware, the computer ... ... ... <em>— slows down and behaves abnormally</em></li><li>To avoid viruses, download only from ... ... ... <em>— trusted sources</em></li><li>... ... ... is a program designed to detect and remove viruses from the computer. <em>— An antivirus program</em></li></ol>"
             }
           ]
@@ -4265,33 +3950,6 @@
               "Scans files, warns on detection, cleans infections, guards memory.",
               "Examples: McAfee, Kaspersky, Norton, AVAST."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "What is malware? + how it spreads + symptoms",
-            "activity": "Tell the story of one infection (pen drive → slow PC → pop-ups); pupils match symptoms to the figure.",
-            "outcome": "Students can define malware, name its types, and list spread routes and symptoms.",
-            "figures": [
-              "figures/class6/symptoms-of-malware.jpg"
-            ]
-          },
-          {
-            "period": "Period 2",
-            "topic": "Prevention + antivirus software",
-            "activity": "Safe-computing checklist drill; open the lab antivirus, check its update date and run a quick scan demo.",
-            "outcome": "Students can practise safe computing and explain antivirus tasks.",
-            "figures": [
-              "figures/class6/antivirus-softwares.jpg"
-            ]
-          },
-          {
-            "period": "Period 3",
-            "topic": "Summary + Exercise 8",
-            "activity": "Symptom-or-not quiz, then Exercise 8 objective, short and long questions.",
-            "outcome": "Students can answer Exercise 8 on malware.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -4429,14 +4087,12 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/save-a-copy-of-a-file-6.jpg",
-                "caption": "Save a Copy of a File",
-                "page": 78
+                "caption": "Save a Copy of a File"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/save-a-copy-of-a-file-6-8d394.jpg",
-                "caption": "Save a Copy of a File",
-                "page": 78
+                "caption": "Save a Copy of a File"
               }
             ]
           },
@@ -4523,8 +4179,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/select-text-6.jpg",
-                "caption": "Select Text",
-                "page": 80
+                "caption": "Select Text"
               }
             ]
           },
@@ -4642,8 +4297,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/add-wordart-6.jpg",
-                "caption": "Add WordArt",
-                "page": 82
+                "caption": "Add WordArt"
               }
             ]
           },
@@ -4811,8 +4465,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/insert-a-picture-from-a-file-6.jpg",
-                "caption": "Insert a Picture From a File",
-                "page": 85
+                "caption": "Insert a Picture From a File"
               }
             ]
           },
@@ -4868,8 +4521,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/inserting-shapes-6.jpg",
-                "caption": "Inserting Shapes",
-                "page": 86
+                "caption": "Inserting Shapes"
               }
             ]
           },
@@ -4892,42 +4544,36 @@
           {
             "file": "/figures/class6/save-a-copy-of-a-file-6.jpg",
             "caption": "Save a Copy of a File",
-            "page": 78,
             "section": "save-a-copy-of-a-file",
             "section_title": "Save a Copy of a File"
           },
           {
             "file": "/figures/class6/save-a-copy-of-a-file-6-8d394.jpg",
             "caption": "Save a Copy of a File",
-            "page": 78,
             "section": "save-a-copy-of-a-file",
             "section_title": "Save a Copy of a File"
           },
           {
             "file": "/figures/class6/select-text-6.jpg",
             "caption": "Select Text",
-            "page": 80,
             "section": "select-text",
             "section_title": "Select Text"
           },
           {
             "file": "/figures/class6/add-wordart-6.jpg",
             "caption": "Add WordArt",
-            "page": 82,
             "section": "add-wordart",
             "section_title": "Add WordArt"
           },
           {
             "file": "/figures/class6/insert-a-picture-from-a-file-6.jpg",
             "caption": "Insert a Picture From a File",
-            "page": 85,
             "section": "insert-a-picture-from-a-file",
             "section_title": "Insert a Picture From a File"
           },
           {
             "file": "/figures/class6/inserting-shapes-6.jpg",
             "caption": "Inserting Shapes",
-            "page": 86,
             "section": "inserting-shapes",
             "section_title": "Inserting Shapes"
           }
@@ -5015,15 +4661,15 @@
           ],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Word processing is used to develop webpages<br>(b) Formatting is done to insert images in the document<br>(c) MS Excel is an example of word processing software<br>(d) The document extension created using MS Word is ppt or .pptx<br>(e) The keyboard shortcut to bold the selected text is CTRL+U",
+              "q": "Rewrite the incorrect statements:<ol><li>Word processing is used to develop webpages</li><li>Formatting is done to insert images in the document</li><li>MS Excel is an example of word processing software</li><li>The document extension created using MS Word is ppt or .pptx</li><li>The keyboard shortcut to bold the selected text is CTRL+U</li></ol>",
               "a": "<ol><li>Word processing is used to create, edit, format and print <strong>documents</strong>. (Webpages are made with web design tools.)</li><li>Formatting is done to make the document look attractive and easy to read. (Images are inserted with the Insert/Picture command.)</li><li><strong>MS Word</strong> is an example of word processing software. (MS Excel is a spreadsheet program.)</li><li>The document extension created using MS Word is <strong>.doc or .docx</strong>. (.ppt/.pptx belongs to PowerPoint.)</li><li>The keyboard shortcut to bold the selected text is <strong>Ctrl + B</strong>. (Ctrl + U underlines it.)</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) Word processing uses a computer to create, edit, save, and print documents<br>(b) Word processing provides an option to save the document and allow printing in different sizes<br>(c) Subscript is used to raise the selected text above the baseline<br>(d) Font is used to insert WordArt in MS Word<br>(e) Page color in MS Word is used to change the color of the selected text",
+              "q": "State whether the following are true or false:<ol><li>Word processing uses a computer to create, edit, save, and print documents</li><li>Word processing provides an option to save the document and allow printing in different sizes</li><li>Subscript is used to raise the selected text above the baseline</li><li>Font is used to insert WordArt in MS Word</li><li>Page color in MS Word is used to change the color of the selected text</li></ol>",
               "a": "<ol><li>True. Word processing uses a computer to create, edit, save, and print documents.</li><li>True. Word processing provides an option to save the document and allow printing in different sizes.</li><li>False. That is <strong>superscript</strong>. Subscript places the text below the baseline.</li><li>False. Font settings change the typeface, size and style of text. WordArt is inserted from the Insert tab.</li><li>False. Page colour changes the background colour of the <strong>page</strong>. Font colour changes the colour of the selected text.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) ... ... ... is used for creating, editing, and formatting documents<br>(b) ... ... ... is the process of making the document look attractive<br>(c) Different options in MS Word for paragraph alignment are ... ... <br>(d) ... ... ... is used to display the selected text below the baseline<br>(e) ... ... ... is a keyboard shortcut to display the selected text in bold",
+              "q": "Fill in the blanks:<ol><li>... ... ... is used for creating, editing, and formatting documents</li><li>... ... ... is the process of making the document look attractive</li><li>Different options in MS Word for paragraph alignment are ... ...</li><li>... ... ... is used to display the selected text below the baseline</li><li>... ... ... is a keyboard shortcut to display the selected text in bold</li></ol>",
               "a": "<ol><li>... ... ... is used for creating, editing, and formatting documents. <em>— Word processing software (MS Word)</em></li><li>... ... ... is the process of making the document look attractive. <em>— Formatting</em></li><li>Different options in MS Word for paragraph alignment are ... ... ... <em>— left, right, centre and justify</em></li><li>... ... ... is used to display the selected text below the baseline. <em>— Subscript</em></li><li>... ... ... is a keyboard shortcut to display the selected text in bold. <em>— Ctrl + B</em></li></ol>"
             }
           ]
@@ -5103,36 +4749,6 @@
               "Copy/cut/paste: CTRL+C / CTRL+X / CTRL+V.",
               "Finish with page color and page borders (Design tab)."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Opening Word + saving and opening documents",
-            "activity": "Lab: every pupil opens Word both ways, types their name, saves (CTRL+S), Save As with a new name, closes and reopens.",
-            "outcome": "Students can open, save and reopen documents.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Formatting text + paragraphs + lists",
-            "activity": "Format-the-paragraph drill: font, B/I/U, superscript, alignment, then build one bulleted and one numbered list.",
-            "outcome": "Students can format text, align paragraphs and create lists.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "WordArt, symbols, pictures, shapes, page design",
-            "activity": "Make-a-poster task: title in WordArt, one symbol, one picture, one shape, page color and border.",
-            "outcome": "Students can enrich a document with objects and page design.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 9",
-            "activity": "Finish posters; peer-review against a checklist, then Exercise 9 questions and practicals.",
-            "outcome": "Students can produce a finished document and answer Exercise 9.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions",
@@ -5566,56 +5182,47 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/cell-reference-cell-address-6.jpg",
-                "caption": ". Cell Reference (Cell Address)",
-                "page": 92
+                "caption": ". Cell Reference (Cell Address)"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/ms-excel-6.jpg",
-                "caption": "MS Excel",
-                "page": 92
+                "caption": "MS Excel"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/how-to-open-ms-excel-2016-6.jpg",
-                "caption": "How to Open MS Excel 2016?",
-                "page": 93
+                "caption": "How to Open MS Excel 2016?"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/how-to-open-ms-excel-2016-6-6383c.jpg",
-                "caption": "How to Open MS Excel 2016?",
-                "page": 93
+                "caption": "How to Open MS Excel 2016?"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/formatting-the-data-in-the-worksheet-6.jpg",
-                "caption": "Formatting the Data in the Worksheet",
-                "page": 94
+                "caption": "Formatting the Data in the Worksheet"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/borders-6.jpg",
-                "caption": "Borders",
-                "page": 96
+                "caption": "Borders"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/examples-of-mathematical-calculations-6.jpg",
-                "caption": "Examples of Mathematical Calculations",
-                "page": 99
+                "caption": "Examples of Mathematical Calculations"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/creating-a-chart-6.jpg",
-                "caption": "Creating a Chart",
-                "page": 100
+                "caption": "Creating a Chart"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/creating-a-chart-6-1a831.jpg",
-                "caption": "Creating a Chart",
-                "page": 100
+                "caption": "Creating a Chart"
               }
             ]
           }
@@ -5624,63 +5231,54 @@
           {
             "file": "/figures/class6/cell-reference-cell-address-6.jpg",
             "caption": ". Cell Reference (Cell Address)",
-            "page": 92,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/ms-excel-6.jpg",
             "caption": "MS Excel",
-            "page": 92,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/how-to-open-ms-excel-2016-6.jpg",
             "caption": "How to Open MS Excel 2016?",
-            "page": 93,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/how-to-open-ms-excel-2016-6-6383c.jpg",
             "caption": "How to Open MS Excel 2016?",
-            "page": 93,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/formatting-the-data-in-the-worksheet-6.jpg",
             "caption": "Formatting the Data in the Worksheet",
-            "page": 94,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/borders-6.jpg",
             "caption": "Borders",
-            "page": 96,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/examples-of-mathematical-calculations-6.jpg",
             "caption": "Examples of Mathematical Calculations",
-            "page": 99,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/creating-a-chart-6.jpg",
             "caption": "Creating a Chart",
-            "page": 100,
             "section": "ms-excel",
             "section_title": "MS Excel"
           },
           {
             "file": "/figures/class6/creating-a-chart-6-1a831.jpg",
             "caption": "Creating a Chart",
-            "page": 100,
             "section": "ms-excel",
             "section_title": "MS Excel"
           }
@@ -5780,15 +5378,15 @@
           ],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) A spreadsheet is a computer application program that is used to create, edit and print documents<br>(b) The cell's data in the spreadsheet is referred to as its cell reference<br>(c) More than one cell can be active at a time<br>(d) The extension of the file created using MS Excel is .doc or .docx<br>(e) The formula in MS Excel begins with the + symbol",
+              "q": "Rewrite the incorrect statements:<ol><li>A spreadsheet is a computer application program that is used to create, edit and print documents</li><li>The cell's data in the spreadsheet is referred to as its cell reference</li><li>More than one cell can be active at a time</li><li>The extension of the file created using MS Excel is .doc or .docx</li><li>The formula in MS Excel begins with the + symbol</li></ol>",
               "a": "<ol><li>A spreadsheet is a computer application used to organise, calculate and analyse data in rows and columns. (Documents are made in a word processor.)</li><li>The cell’s <strong>address</strong> (such as B3) is referred to as its cell reference. The data typed into it is the cell content.</li><li>Only <strong>one</strong> cell can be active at a time — that is the cell currently selected.</li><li>The extension of a file created using MS Excel is <strong>.xls or .xlsx</strong>. (.doc/.docx belongs to MS Word.)</li><li>A formula in MS Excel begins with the <strong>=</strong> (equals) symbol.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) MS Word is a commercial spreadsheet application program developed by Microsoft Inc<br>(b) Sorting is the process of finding data in MS Excel<br>(c) The border is used to make the gridlines printable<br>(d) The formula for addition in MS Excel is SUMO<br>(e) MS Excel doesn't support charts",
+              "q": "State whether the following are true or false:<ol><li>MS Word is a commercial spreadsheet application program developed by Microsoft Inc</li><li>Sorting is the process of finding data in MS Excel</li><li>The border is used to make the gridlines printable</li><li>The formula for addition in MS Excel is SUMO</li><li>MS Excel doesn't support charts</li></ol>",
               "a": "<ol><li>False. That is <strong>MS Excel</strong>. MS Word is the word processor.</li><li>False. Sorting arranges data in order. Finding data is <strong>search / find</strong>.</li><li>True. The border is used to make the gridlines printable.</li><li>False. The formula for addition is <strong>SUM</strong>.</li><li>False. MS Excel supports charts — they are one of its main features.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) . is used for accounting, mathematical and numerical calculations<br>(b) A cell is the intersection of ... ... ... and <br>(c) ... is the file, in which the user works and store data<br>(d) The predefined formula to calculate the product of numbers is <br>(e) ... is the graphical presentation of numeric data in the worksheet",
+              "q": "Fill in the blanks:<ol><li>. is used for accounting, mathematical and numerical calculations</li><li>A cell is the intersection of ... ... ... and</li><li>... is the file, in which the user works and store data</li><li>The predefined formula to calculate the product of numbers is</li><li>... is the graphical presentation of numeric data in the worksheet</li></ol>",
               "a": "<ol><li>. is used for accounting, mathematical and numerical calculations. <em>— A spreadsheet (MS Excel)</em></li><li>A cell is the intersection of ... ... ... and .. <em>— a row and a column</em></li><li>... is the file, in which the user works and store data. <em>— A workbook</em></li><li>The predefined formula to calculate the product of numbers is . <em>— PRODUCT</em></li><li>... is the graphical presentation of numeric data in the worksheet. <em>— A chart</em></li></ol>"
             }
           ]
@@ -5868,36 +5466,6 @@
               "Sort A→Z / Z→A, smallest→largest and back.",
               "Charts: column, line, pie, bar, area, scatter — auto-update with data."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Features + fundamentals (cell → workbook)",
-            "activity": "Open a blank workbook; pupils find A1, select ranges, rename a sheet, and name each part aloud.",
-            "outcome": "Students can use cell, range, active cell, worksheet and workbook correctly.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Formatting, AutoFill, borders, sorting",
-            "activity": "Lab worksheet: format a small table, AutoFill a series, add borders, sort A→Z and back.",
-            "outcome": "Students can format, fill, border and sort worksheet data.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Formulas, functions, charts",
-            "activity": "Build the Total/Amount/VAT sheet from the notes (=C2*D2, =SUM(E2:E6)); add MAX/MIN/AVERAGE; insert a column chart.",
-            "outcome": "Students can calculate with formulas and functions and chart results.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 10",
-            "activity": "Function quiz (which function for which job?), chart show-and-tell, then Exercise 10 questions and practicals.",
-            "outcome": "Students can answer Exercise 10 and demo a chart.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions",
@@ -5997,14 +5565,12 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/to-start-microsoft-powerpoint-2016-6.jpg",
-                "caption": "To Start Microsoft PowerPoint 2016",
-                "page": 107
+                "caption": "To Start Microsoft PowerPoint 2016"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/to-start-microsoft-powerpoint-2016-6-99f8f.jpg",
-                "caption": "To Start Microsoft PowerPoint 2016",
-                "page": 107
+                "caption": "To Start Microsoft PowerPoint 2016"
               },
               {
                 "type": "diagram",
@@ -6099,8 +5665,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/adding-slides-6.jpg",
-                "caption": "Adding Slides",
-                "page": 109
+                "caption": "Adding Slides"
               }
             ]
           },
@@ -6136,8 +5701,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/themes-6.jpg",
-                "caption": "Themes",
-                "page": 110
+                "caption": "Themes"
               }
             ]
           },
@@ -6217,8 +5781,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/insert-the-data-and-labels-6.jpg",
-                "caption": ". Insert the Data and Labels.",
-                "page": 111
+                "caption": ". Insert the Data and Labels."
               }
             ]
           },
@@ -6243,8 +5806,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/slide-transition-6.jpg",
-                "caption": "Slide Transition",
-                "page": 112
+                "caption": "Slide Transition"
               }
             ]
           },
@@ -6289,8 +5851,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/slide-show-options-6.jpg",
-                "caption": "Slide Show Options",
-                "page": 113
+                "caption": "Slide Show Options"
               }
             ]
           },
@@ -6317,49 +5878,42 @@
           {
             "file": "/figures/class6/to-start-microsoft-powerpoint-2016-6.jpg",
             "caption": "To Start Microsoft PowerPoint 2016",
-            "page": 107,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/to-start-microsoft-powerpoint-2016-6-99f8f.jpg",
             "caption": "To Start Microsoft PowerPoint 2016",
-            "page": 107,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/adding-slides-6.jpg",
             "caption": "Adding Slides",
-            "page": 109,
             "section": "adding-slides",
             "section_title": "Adding Slides"
           },
           {
             "file": "/figures/class6/themes-6.jpg",
             "caption": "Themes",
-            "page": 110,
             "section": "duplicate-selected-slides",
             "section_title": "Duplicate Selected Slides"
           },
           {
             "file": "/figures/class6/insert-the-data-and-labels-6.jpg",
             "caption": ". Insert the Data and Labels.",
-            "page": 111,
             "section": "edit-chart-data",
             "section_title": "Edit Chart Data"
           },
           {
             "file": "/figures/class6/slide-transition-6.jpg",
             "caption": "Slide Transition",
-            "page": 112,
             "section": "slide-transition",
             "section_title": "Slide Transition"
           },
           {
             "file": "/figures/class6/slide-show-options-6.jpg",
             "caption": "Slide Show Options",
-            "page": 113,
             "section": "slide-show-options",
             "section_title": "Slide Show Options"
           }
@@ -6443,15 +5997,15 @@
           ],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Presentation software is an application software used for mathematical, accounting, and scientific calculations<br>(b) MS Excel is a presentation software<br>(c) Slide is a document used on the Internet to display data and information<br>(d) MS PowerPoint doesn't support the insertion of audio and video in the presentation<br>(e) Animation is the visual movement as one slide changes to another",
+              "q": "Rewrite the incorrect statements:<ol><li>Presentation software is an application software used for mathematical, accounting, and scientific calculations</li><li>MS Excel is a presentation software</li><li>Slide is a document used on the Internet to display data and information</li><li>MS PowerPoint doesn't support the insertion of audio and video in the presentation</li><li>Animation is the visual movement as one slide changes to another</li></ol>",
               "a": "<ol><li>Presentation software is application software used to create slideshows of text, pictures, audio and video. (Mathematical and accounting work is done in a spreadsheet.)</li><li><strong>MS PowerPoint</strong> is presentation software. (MS Excel is a spreadsheet program.)</li><li>A <strong>slide</strong> is a single page of a presentation. (A document used on the Internet to display data is a webpage.)</li><li>MS PowerPoint <strong>does</strong> support the insertion of audio and video in the presentation.</li><li>That is a <strong>slide transition</strong>. Animation is the movement of objects <em>within</em> a slide.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) A slide is a single page of the presentation<br>(b) The shortcut key used for the slide show is F4<br>(c) The default extension of the file created using MS PowerPoint is .ppt or .pptx<br>(d) User can create their own animation in MS PowerPoint<br>(e) Slide transitions are effects that are in place when you switch from one slide to the next",
+              "q": "State whether the following are true or false:<ol><li>A slide is a single page of the presentation</li><li>The shortcut key used for the slide show is F4</li><li>The default extension of the file created using MS PowerPoint is .ppt or .pptx</li><li>User can create their own animation in MS PowerPoint</li><li>Slide transitions are effects that are in place when you switch from one slide to the next</li></ol>",
               "a": "<ol><li>True. A slide is a single page of the presentation.</li><li>False. The shortcut key to start a slide show is <strong>F5</strong>.</li><li>True. The default extension of the file created using MS PowerPoint is .ppt or .pptx.</li><li>True. User can create their own animation in MS PowerPoint.</li><li>True. Slide transitions are effects that are in place when you switch from one slide to the next.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) Presentation software is used for ... ... <br>(b) ... ... ... is a page of a presentation<br>(c) Slide transition and slide animation are used for making the presentation ... ... ... and ... ... <br>(d) ... ... ... is a special visual or sound effect to the slide or the objects on the slide<br>(e) ... ... ... are designed to apply the same design to an entire presentation",
+              "q": "Fill in the blanks:<ol><li>Presentation software is used for ... ...</li><li>... ... ... is a page of a presentation</li><li>Slide transition and slide animation are used for making the presentation ... ... ... and ... ...</li><li>... ... ... is a special visual or sound effect to the slide or the objects on the slide</li><li>... ... ... are designed to apply the same design to an entire presentation</li></ol>",
               "a": "<ol><li>Presentation software is used for ... ... ... <em>— creating and showing slideshows</em></li><li>... ... ... is a page of a presentation. <em>— A slide</em></li><li>Slide transition and slide animation are used for making the presentation ... ... ... and ... ... ... <em>— attractive and effective</em></li><li>... ... ... is a special visual or sound effect to the slide or the objects on the slide. <em>— Animation</em></li><li>... ... ... are designed to apply the same design to an entire presentation. <em>— Themes (design templates)</em></li></ol>"
             }
           ]
@@ -6531,36 +6085,6 @@
               "Add sound and speed to transitions.",
               "Slide show: from beginning, from current slide, or set-up show."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Starting PowerPoint + text boxes",
-            "activity": "Lab: open PowerPoint both ways; pupils add a title box, resize, move, recolor and delete it.",
-            "outcome": "Students can start PowerPoint and control text boxes.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Slides, themes, pictures, shapes, charts",
-            "activity": "Build a 3-slide deck: new slide, duplicated slide, theme, one picture, one shape; insert and edit a small chart.",
-            "outcome": "Students can build multi-slide content with objects.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Transitions, animations, slide show",
-            "activity": "Add a transition with sound and speed, animate one object, preview, then run the show both ways.",
-            "outcome": "Students can animate and present a slide show.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 11",
-            "activity": "Mini-presentations in groups (2 minutes each), then Exercise 11 questions and practicals.",
-            "outcome": "Students can present a deck and answer Exercise 11.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions",
@@ -6694,8 +6218,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/components-of-ms-paint-window.jpg",
-                "caption": "Components of MS Paint Window",
-                "page": 118
+                "caption": "Components of MS Paint Window"
               }
             ]
           },
@@ -6723,8 +6246,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/features-of-ms-paint.jpg",
-                "caption": "Features of Ms Paint",
-                "page": 119
+                "caption": "Features of Ms Paint"
               }
             ]
           },
@@ -6945,14 +6467,12 @@
           {
             "file": "/figures/class6/components-of-ms-paint-window.jpg",
             "caption": "Components of MS Paint Window",
-            "page": 118,
             "section": "components-of-ms-paint-window",
             "section_title": "Components of MS Paint Window"
           },
           {
             "file": "/figures/class6/features-of-ms-paint.jpg",
             "caption": "Features of Ms Paint",
-            "page": 119,
             "section": "features-of-ms-paint",
             "section_title": "Features of MS Paint"
           }
@@ -7068,11 +6588,11 @@
           ],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) MS Paint is a tool on your computer that lets to create documents<br>(b) Ms Paint doesn't come with all versions of Microsoft Windows<br>(c) The brush tool in MS Paint is used to erase the drawings<br>(d) The eraser in MS Paint allows drawing freehand strokes on the canvas<br>(e) MS Paint doesn't have the feature to crop drawings",
+              "q": "Rewrite the incorrect statements:<ol><li>MS Paint is a tool on your computer that lets to create documents</li><li>Ms Paint doesn't come with all versions of Microsoft Windows</li><li>The brush tool in MS Paint is used to erase the drawings</li><li>The eraser in MS Paint allows drawing freehand strokes on the canvas</li><li>MS Paint doesn't have the feature to crop drawings</li></ol>",
               "a": "<ol><li>MS Paint is a tool on your computer that lets you create <strong>drawings and pictures</strong>. (Documents are made in a word processor.)</li><li>MS Paint <strong>comes with all versions</strong> of Microsoft Windows.</li><li>The brush tool is used to <strong>draw freehand strokes</strong>. (The eraser removes them.)</li><li>The <strong>brush or pencil</strong> allows drawing freehand strokes on the canvas. (The eraser erases.)</li><li>MS Paint <strong>does</strong> have the feature to crop drawings.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) MS Paint can only make single-layer bitmapped pictures<br>(b) The drawing canvas is the area in which the user will create and/or modify text only<br>(c) MS Paint has several pre-made shapes such as circles, squares, lines, and arrows that you can use to create your drawings<br>(d) You cannot edit images using MS Paint<br>(e) You cannot save your MS Paint images/drawings in a variety of file formats such as JPEG, PNG, BMP and GIF formats",
+              "q": "State whether the following are true or false:<ol><li>MS Paint can only make single-layer bitmapped pictures</li><li>The drawing canvas is the area in which the user will create and/or modify text only</li><li>MS Paint has several pre-made shapes such as circles, squares, lines, and arrows that you can use to create your drawings</li><li>You cannot edit images using MS Paint</li><li>You cannot save your MS Paint images/drawings in a variety of file formats such as JPEG, PNG, BMP and GIF formats</li></ol>",
               "a": "<ol><li>True. MS Paint can only make single-layer bitmapped pictures.</li><li>False. The drawing canvas is the area in which the user creates and modifies <strong>drawings and pictures</strong>, not only text.</li><li>True. MS Paint has several pre-made shapes such as circles, squares, lines, and arrows that you can use to create your drawings.</li><li>False. You <strong>can</strong> edit images using MS Paint.</li><li>False. You <strong>can</strong> save MS Paint images in a variety of file formats such as JPEG, PNG, BMP and GIF.</li></ol>"
             }
           ]
@@ -7154,36 +6674,6 @@
               "Formats: JPEG, PNG, BMP, GIF — quality vs size.",
               "File → Exit closes Paint after saving."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Opening Paint + window parts + features",
-            "activity": "Everyone opens Paint; point-and-name tour of menu bar, ribbon, canvas, colour picker, shapes.",
-            "outcome": "Students can open Paint and name its parts and features.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Drawing: lines, fills, eraser, brush, text",
-            "activity": "Draw-a-house task using line, fill, brush and text tools; fix mistakes with the eraser.",
-            "outcome": "Students can draw, colour and label a picture.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Editing: select, copy, move, resize, crop, rotate, view",
-            "activity": "Edit-the-house task: copy a window, move the door, resize, crop, rotate, then zoom and full-screen to check.",
-            "outcome": "Students can edit selections and use view tools.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Saving, exiting + Summary + Exercise 12",
-            "activity": "Save work as JPEG and PNG; compare sizes; exit properly; then Exercise 12 questions and practicals.",
-            "outcome": "Students can save, exit and answer Exercise 12.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions",
@@ -7339,8 +6829,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/components-of-multimedia.jpg",
-                "caption": "Components of Multimedia",
-                "page": 135
+                "caption": "Components of Multimedia"
               }
             ]
           },
@@ -7378,8 +6867,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/application-areas-of-multimedia.jpg",
-                "caption": "Application Areas of Multimedia",
-                "page": 137
+                "caption": "Application Areas of Multimedia"
               }
             ]
           }
@@ -7388,14 +6876,12 @@
           {
             "file": "/figures/class6/components-of-multimedia.jpg",
             "caption": "Components of Multimedia",
-            "page": 135,
             "section": "components-elements-of-multimedia",
             "section_title": "Components/Elements of Multimedia"
           },
           {
             "file": "/figures/class6/application-areas-of-multimedia.jpg",
             "caption": "Application Areas of Multimedia",
-            "page": 137,
             "section": "application-areas-of-multimedia",
             "section_title": "Application Areas of Multimedia"
           }
@@ -7450,15 +6936,15 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Multimedia represents computer information through single media<br>(b) Multimedia is difficult and not effective to use<br>(c) Image and graphics are not the important part of multimedia<br>(d) The hardware required for multimedia is cheaper<br>(e) Text represents images, sound, and video",
+              "q": "Rewrite the incorrect statements:<ol><li>Multimedia represents computer information through single media</li><li>Multimedia is difficult and not effective to use</li><li>Image and graphics are not the important part of multimedia</li><li>The hardware required for multimedia is cheaper</li><li>Text represents images, sound, and video</li></ol>",
               "a": "<ol><li>Multimedia represents computer information through <strong>more than one</strong> medium — text, graphics, audio, video and animation.</li><li>Multimedia is <strong>easy and effective</strong> to use.</li><li>Image and graphics <strong>are</strong> an important part of multimedia.</li><li>The hardware required for multimedia is comparatively <strong>expensive</strong>.</li><li><strong>Text</strong> represents characters, words and numbers. (Images, sound and video are separate media.)</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) Multimedia is the combination of one media performing at the same time<br>(b) Study materials containing multimedia are more attractive and effective for the teaching/learning process<br>(c) Multimedia is not used in the entertainment industry for developing special effects, like in movies, cartoons, and games<br>(d) Multimedia is not used for communication<br>(e) Multimedia is used for showing the effective presentation of marketing, advertising, and product promotion",
+              "q": "State whether the following are true or false:<ol><li>Multimedia is the combination of one media performing at the same time</li><li>Study materials containing multimedia are more attractive and effective for the teaching/learning process</li><li>Multimedia is not used in the entertainment industry for developing special effects, like in movies, cartoons, and games</li><li>Multimedia is not used for communication</li><li>Multimedia is used for showing the effective presentation of marketing, advertising, and product promotion</li></ol>",
               "a": "<ol><li>False. Multimedia is the combination of <strong>two or more</strong> media performing at the same time.</li><li>True. Study materials containing multimedia are more attractive and effective for the teaching/learning process.</li><li>False. Multimedia <strong>is</strong> used in the entertainment industry for special effects in films and games.</li><li>False. Multimedia <strong>is</strong> used for communication — video calls, presentations and the web all rely on it.</li><li>True. Multimedia is used for showing the effective presentation of marketing, advertising, and product promotion.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) Multimedia is the combination of ... ... ... or ... ... ... media performing at the same time<br>(b) Text represents characters like ... ... <br>(c) Image or graphics includes ... ... <br>(d) Video is the collection of ... ... <br>(e) Animation is adding a ... ... ",
+              "q": "Fill in the blanks:<ol><li>Multimedia is the combination of ... ... ... or ... ... ... media performing at the same time</li><li>Text represents characters like ... ...</li><li>Image or graphics includes ... ...</li><li>Video is the collection of ... ...</li><li>Animation is adding a ... ...</li></ol>",
               "a": "<ol><li>Multimedia is the combination of ... ... ... or ... ... ... media performing at the same time. <em>— two or more</em></li><li>Text represents characters like ... ... ... <em>— letters, numbers and symbols</em></li><li>Image or graphics includes ... ... ... <em>— pictures, drawings and charts</em></li><li>Video is the collection of ... ... ... <em>— moving images or frames</em></li><li>Animation is adding a ... ... ... <em>— motion effect to still images</em></li></ol>"
             }
           ]
@@ -7530,29 +7016,6 @@
               "Entertainment: VFX, 3D animation, games.",
               "Web, business (ads, promotion) and communication (video chat)."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Introduction + pros and cons",
-            "activity": "Hunt for multimedia in the classroom (textbook pictures, speaker, projector); vote advantages vs disadvantages.",
-            "outcome": "Students can define multimedia and weigh its pros and cons.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Five elements + application areas",
-            "activity": "Element match-up: pupils label examples (song, cartoon, photo…) with elements, then map five sectors.",
-            "outcome": "Students can explain the five elements and five sectors.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Summary + Exercise 13",
-            "activity": "Plan-a-mini-project: design a 1-minute multimedia lesson; then Exercise 13 questions.",
-            "outcome": "Students can plan multimedia use and answer Exercise 13.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -7655,20 +7118,17 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/e-commerce.jpg",
-                "caption": "E-commerce",
-                "page": 141
+                "caption": "E-commerce"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/m-commerce.jpg",
-                "caption": "M-commerce",
-                "page": 142
+                "caption": "M-commerce"
               },
               {
                 "type": "figure",
                 "src": "/figures/class6/lot.jpg",
-                "caption": "loT",
-                "page": 146
+                "caption": "loT"
               },
               {
                 "type": "diagram",
@@ -7692,8 +7152,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/online-payment.jpg",
-                "caption": "Online Payment",
-                "page": 142
+                "caption": "Online Payment"
               }
             ]
           },
@@ -7708,8 +7167,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/cloud-computing.jpg",
-                "caption": "Cloud Computing",
-                "page": 143
+                "caption": "Cloud Computing"
               }
             ]
           },
@@ -7728,8 +7186,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/artificial-intelligence.jpg",
-                "caption": "Artificial Intelligence",
-                "page": 144
+                "caption": "Artificial Intelligence"
               }
             ]
           },
@@ -7748,8 +7205,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/virtual-reality.jpg",
-                "caption": "Virtual Reality",
-                "page": 144
+                "caption": "Virtual Reality"
               }
             ]
           },
@@ -7780,8 +7236,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/mobile-computing.jpg",
-                "caption": "Mobile Computing",
-                "page": 145
+                "caption": "Mobile Computing"
               }
             ]
           },
@@ -7818,8 +7273,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/social-media.jpg",
-                "caption": "Social Media",
-                "page": 141
+                "caption": "Social Media"
               }
             ]
           }
@@ -7828,63 +7282,54 @@
           {
             "file": "/figures/class6/social-media.jpg",
             "caption": "Social Media",
-            "page": 141,
             "section": "summary-at-a-glance",
             "section_title": "Summary at a Glance"
           },
           {
             "file": "/figures/class6/e-commerce.jpg",
             "caption": "E-commerce",
-            "page": 141,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/m-commerce.jpg",
             "caption": "M-commerce",
-            "page": 142,
             "section": "introduction",
             "section_title": "Introduction"
           },
           {
             "file": "/figures/class6/online-payment.jpg",
             "caption": "Online Payment",
-            "page": 142,
             "section": "online-payment",
             "section_title": "Online Payment"
           },
           {
             "file": "/figures/class6/cloud-computing.jpg",
             "caption": "Cloud Computing",
-            "page": 143,
             "section": "cloud-computing",
             "section_title": "Cloud Computing"
           },
           {
             "file": "/figures/class6/artificial-intelligence.jpg",
             "caption": "Artificial Intelligence",
-            "page": 144,
             "section": "artificial-intelligence",
             "section_title": "Artificial Intelligence"
           },
           {
             "file": "/figures/class6/virtual-reality.jpg",
             "caption": "Virtual Reality",
-            "page": 144,
             "section": "virtual-reality",
             "section_title": "Virtual Reality"
           },
           {
             "file": "/figures/class6/mobile-computing.jpg",
             "caption": "Mobile Computing",
-            "page": 145,
             "section": "mobile-computing",
             "section_title": "Mobile Computing"
           },
           {
             "file": "/figures/class6/lot.jpg",
             "caption": "loT",
-            "page": 146,
             "section": "introduction",
             "section_title": "Introduction"
           }
@@ -7948,15 +7393,15 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) Contemporary technologies are the tools and systems used in ancient days<br>(b) E-commerce is used for sharing ideas and thoughts<br>(c) Online payment includes cash transactions<br>(d) Artificial Intelligence refers to the intelligence of the human<br>(e) Mobile computing is a way of desktop PC",
+              "q": "Rewrite the incorrect statements:<ol><li>Contemporary technologies are the tools and systems used in ancient days</li><li>E-commerce is used for sharing ideas and thoughts</li><li>Online payment includes cash transactions</li><li>Artificial Intelligence refers to the intelligence of the human</li><li>Mobile computing is a way of desktop PC</li></ol>",
               "a": "<ol><li>Contemporary technologies are the tools and systems used <strong>today</strong>.</li><li>E-commerce is used for <strong>buying and selling</strong> goods and services online. (Sharing ideas and thoughts is social media.)</li><li>Online payment <strong>excludes</strong> cash transactions — it moves money electronically.</li><li>Artificial Intelligence refers to the intelligence shown by <strong>machines</strong>, not humans.</li><li>Mobile computing is a way of computing <strong>on the go</strong>, using portable devices.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) Social media is an Internet-based technology that supports the sharing of ideas, thoughts, and information<br>(b) M-commerce is the type of e-commerce that happens on mobile devices like phones and tablets. Cloud computing is the way of using our own computer to store and access programs, files, and data<br>(c) Virtual reality is a type of technology that lets the user feel like in a different world or place<br>(d) IoT refers to the type of technology that connects different computers together",
+              "q": "State whether the following are true or false:<ol><li>Social media is an Internet-based technology that supports the sharing of ideas, thoughts, and information</li><li>M-commerce is the type of e-commerce that happens on mobile devices like phones and tablets. Cloud computing is the way of using our own computer to store and access programs, files, and data</li><li>Virtual reality is a type of technology that lets the user feel like in a different world or place</li><li>IoT refers to the type of technology that connects different computers together</li></ol>",
               "a": "<ol><li>True. Social media is an Internet-based technology that supports the sharing of ideas, thoughts, and information.</li><li>True. M-commerce is the type of e-commerce that happens on mobile devices like phones and tablets. Cloud computing is the way of using our own computer to store and access programs, files, and data.</li><li>True. Virtual reality is a type of technology that lets the user feel like in a different world or place.</li><li>False. IoT (Internet of Things) connects everyday <strong>devices and objects</strong> — appliances, vehicles, sensors — to the internet, not just computers.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) ... is the way of buying and selling things using the Internet<br>(b) ... is a way of sending money using the Internet<br>(c) ... is the way of using the Internet to store and access programs, files, and data<br>(d) . is a type of computer technology that helps machines learn to think and make decisions as humans do<br>(e) .. is a way of using technology on the go, using devices like phones, tablets, and laptops",
+              "q": "Fill in the blanks:<ol><li>... is the way of buying and selling things using the Internet</li><li>... is a way of sending money using the Internet</li><li>... is the way of using the Internet to store and access programs, files, and data</li><li>. is a type of computer technology that helps machines learn to think and make decisions as humans do</li><li>.. is a way of using technology on the go, using devices like phones, tablets, and laptops</li></ol>",
               "a": "<ol><li>... is the way of buying and selling things using the Internet. <em>— E-commerce</em></li><li>... is a way of sending money using the Internet. <em>— Online payment</em></li><li>... is the way of using the Internet to store and access programs, files, and data. <em>— Cloud computing</em></li><li>. is a type of computer technology that helps machines learn to think and make decisions as humans do. <em>— Artificial Intelligence (AI)</em></li><li>.. is a way of using technology on the go, using devices like phones, tablets, and laptops. <em>— Mobile computing</em></li></ol>"
             }
           ]
@@ -8036,36 +7481,6 @@
               "Examples: smart street lights, adaptive signals, smart buildings.",
               "Social media = sharing ideas through virtual communities."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "E-commerce, M-commerce, online payment",
-            "activity": "Walk through ordering on a Nepali site (demo); pupils list what a wallet/card must do at each step.",
-            "outcome": "Students can explain e-commerce, M-commerce and online payment.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Cloud, AI, VR",
-            "activity": "Save-and-open demo across two machines (cloud idea); pupils name one AI and one VR example each.",
-            "outcome": "Students can explain cloud computing, AI and VR with examples.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Mobile computing, IoT, smart cities",
-            "activity": "Design-a-smart-room task: which devices connect, what do they sense, what do they control?",
-            "outcome": "Students can explain mobile computing, IoT and smart cities.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Summary + Exercise 14",
-            "activity": "Technology timeline quiz, then Exercise 14 questions and full forms.",
-            "outcome": "Students can answer Exercise 14 on contemporary technologies.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"
@@ -8482,8 +7897,7 @@
               {
                 "type": "figure",
                 "src": "/figures/class6/elements-of-qbasic-programming.jpg",
-                "caption": "Elements of QBASIC Programming",
-                "page": 153
+                "caption": "Elements of QBASIC Programming"
               }
             ]
           },
@@ -8599,7 +8013,6 @@
           {
             "file": "/figures/class6/elements-of-qbasic-programming.jpg",
             "caption": "Elements of QBASIC Programming",
-            "page": 153,
             "section": "elements-of-qbasic-programming",
             "section_title": "Elements of QBASIC Programming"
           }
@@ -8702,15 +8115,15 @@
           "practical": [],
           "objective": [
             {
-              "q": "Rewrite the incorrect statements:<br>(a) A computer program is a collection of software<br>(b) The computer cannot directly understand the program developed in machine language<br>(c) Assembly language is the fourth-generation language<br>(d) QBASIC is a machine language<br>(e) The meaning of keywords can be defined by the programmer",
+              "q": "Rewrite the incorrect statements:<ol><li>A computer program is a collection of software</li><li>The computer cannot directly understand the program developed in machine language</li><li>Assembly language is the fourth-generation language</li><li>QBASIC is a machine language</li><li>The meaning of keywords can be defined by the programmer</li></ol>",
               "a": "<ol><li>A computer program is a collection of <strong>instructions</strong> that tell the computer what to do. (Software is a collection of programs.)</li><li>The computer <strong>can</strong> directly understand a program written in machine language — that is the only language it runs natively.</li><li>Assembly language is a <strong>low-level (second-generation)</strong> language.</li><li>QBASIC is a <strong>high-level</strong> language.</li><li>The meaning of keywords is <strong>fixed by the language</strong> and cannot be redefined by the programmer.</li></ol>"
             },
             {
-              "q": "State whether the following are true or false:<br>(a) The program comprises a set of symbols, characters, and operators that instruct the computer to perform a specific task<br>(b) The program developed in a high-level language can be executed directly<br>(c) QBASIC stands for Quick Begun All-time Symbolic Instrument Code<br>(d) The value of the variable cannot be changed<br>(e) PRINT statement is used to display contents in the monitor",
+              "q": "State whether the following are true or false:<ol><li>The program comprises a set of symbols, characters, and operators that instruct the computer to perform a specific task</li><li>The program developed in a high-level language can be executed directly</li><li>QBASIC stands for Quick Begun All-time Symbolic Instrument Code</li><li>The value of the variable cannot be changed</li><li>PRINT statement is used to display contents in the monitor</li></ol>",
               "a": "<ol><li>True. The program comprises a set of symbols, characters, and operators that instruct the computer to perform a specific task.</li><li>False. A high-level program must first be <strong>translated</strong> into machine language by a compiler or interpreter.</li><li>False. QBASIC stands for <strong>Quick Beginners All-purpose Symbolic Instruction Code</strong>.</li><li>False. The value of a variable <strong>can</strong> be changed as the program runs — that is what makes it a variable.</li><li>True. PRINT statement is used to display contents in the monitor.</li></ol>"
             },
             {
-              "q": "Fill in the blanks:<br>(a) A computer program is developed by using <br>(b) Software is the collection of <br>(c) The process of writing a program using the grammar or rules of the programming language is called <br>(d) In QBASIC variable can be declared by using ....... and <br>(e) REM statement is used to ",
+              "q": "Fill in the blanks:<ol><li>A computer program is developed by using</li><li>Software is the collection of</li><li>The process of writing a program using the grammar or rules of the programming language is called</li><li>In QBASIC variable can be declared by using ....... and</li><li>REM statement is used to</li></ol>",
               "a": "<ol><li>A computer program is developed by using ... <em>— a programming language</em></li><li>Software is the collection of .. <em>— programs</em></li><li>The process of writing a program using the grammar or rules of the programming language is called ... <em>— coding (programming)</em></li><li>In QBASIC variable can be declared by using ....... and .. <em>— DIM and LET</em></li><li>REM statement is used to ... <em>— write remarks (comments) in a program</em></li></ol>"
             }
           ]
@@ -8790,43 +8203,6 @@
               "Order: ^ first, then * /, then + −; brackets in pairs.",
               "Statements: declaration (REM, CONST, DIM, END), assignment (LET, SWAP), I/O (CLS, INPUT, PRINT)."
             ]
-          }
-        ],
-        "teaching_plan": [
-          {
-            "period": "Period 1",
-            "topic": "Language levels + QBASIC intro",
-            "activity": "Rank languages machine → assembly → high-level; open QBASIC together and run PRINT “HELLO”.",
-            "outcome": "Students can classify languages and open and run QBASIC.",
-            "figures": []
-          },
-          {
-            "period": "Period 2",
-            "topic": "Elements: character set → constants",
-            "activity": "Board drill: sort names into numeric vs string variables; declare each implicitly, then with DIM.",
-            "outcome": "Students can use QBASIC variables, constants and declarations.",
-            "figures": []
-          },
-          {
-            "period": "Period 3",
-            "topic": "Operators, expressions, operands",
-            "activity": "Evaluate expressions step by step (hierarchy!); pupils predict output before running.",
-            "outcome": "Students can use all four operator types with correct order.",
-            "figures": []
-          },
-          {
-            "period": "Period 4",
-            "topic": "Statements + example programs",
-            "activity": "Type, run and explain all four example programs; pupils modify one (new numbers, new text).",
-            "outcome": "Students can write and run short QBASIC programs.",
-            "figures": []
-          },
-          {
-            "period": "Period 5",
-            "topic": "Summary + Exercise 15",
-            "activity": "Trace-the-output contest with Exercise 15 programs, then remaining questions.",
-            "outcome": "Students can trace and answer Exercise 15.",
-            "figures": []
           }
         ],
         "objective_heading": "Objective questions"

@@ -51,7 +51,7 @@ export default function SubjectPage() {
                 {detailed ? (
                   <>
                     <p className="text-sm text-stone leading-relaxed mb-4">
-                      {detailed.chapter_title} — full notes with every figure from the textbook (pages {detailed.book_pages}).
+                      {detailed.chapter_title} — full notes with every figure from the textbook.
                     </p>
                     <div className="flex flex-wrap items-center gap-2 text-xs font-semibold mb-4">
                       <span className="inline-flex items-center gap-1 bg-amber/10 text-amber-deep px-2 py-0.5 rounded-full">
