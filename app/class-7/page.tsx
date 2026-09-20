@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, Monitor } from 'lucide-react';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
-export const metadata = { title: 'Class 7 — Computer Science | Study Platform', description: 'Class 7 Computer Science study materials verified against textbook.' };
+export const metadata = { title: 'Class 7 — Computer Science | study.companion', description: 'Class 7 Computer Science study materials verified against textbook.' };
 
 export default function Class7Page() {
   return (

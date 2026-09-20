@@ -3,7 +3,7 @@ import { ArrowRight, Monitor, Sparkles } from 'lucide-react';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata = {
-  title: 'Class 10 — Study Materials | Study Platform',
+  title: 'Class 10 — Study Materials | study.companion',
   description: 'Class 10 Computer Science study materials: summaries, key concepts, Q&A and detailed teaching notes.',
 };
 

@@ -1,4 +1,4 @@
-# Study Platform — setup guide
+# study.companion — setup guide
 
 A Next.js site that turns the *Essentials of Computer Science* textbooks
 (Classes 6–12, Asmita Publication) into teachable web pages: detailed

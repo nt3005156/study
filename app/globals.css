@@ -50,6 +50,14 @@ table.match-cols { width: 100%; border-collapse: separate; border-spacing: 0; ma
 .match-cols td:first-child { font-weight: 600; color: #0f172a; border-right: 1px solid #f1f5f9; }
 .match-cols td strong { color: #b45309; }
 
+/* Browse mind-map: staggered draw-in entrance + hub pulse. */
+.mindmap-draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: mindmap-draw 0.9s ease-out forwards; }
+@keyframes mindmap-draw { to { stroke-dashoffset: 0; } }
+.mindmap-pulse { transform-box: fill-box; transform-origin: center; animation: mindmap-pulse 3s ease-in-out infinite; }
+@keyframes mindmap-pulse { 0%, 100% { transform: scale(1); opacity: 0.45; } 50% { transform: scale(1.12); opacity: 0.12; } }
+.mindmap-fade { transform-box: fill-box; animation: mindmap-fade 0.6s ease-out both; }
+@keyframes mindmap-fade { from { opacity: 0; } to { opacity: 1; } }
+
 /* Print styles */
 @media print {
   nav, header .no-print, .no-print { display: none !important; }

@@ -6,7 +6,7 @@ Until they are restored, every figure slot shows a graceful captioned placeholde
 
 ## How to restore them
 
-1. Take the **setup zip** of the Study Platform (it carries all figures).
+1. Take the **setup zip** of the study.companion (it carries all figures).
 2. Copy its `public/figures/class6/` folder into this repo at `public/figures/class6/` (same relative path).
 3. Rebuild (`npm run build`) — Next.js copies `public/figures/` into `dist/figures/` automatically.
 4. Verify: `find dist/figures/class6 -type f | wc -l` should print **80**.

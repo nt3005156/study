@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------
-# Study Platform
+# study.companion
 #
 # Keep the repository small: everything ignored here is either a build
 # output, a dependency, or a cache. None of it is needed to run the site —
@@ -20,6 +20,9 @@ build/
 .next/
 *.tsbuildinfo
 next-env.d.ts.bak
+
+# --- Generated search index (rebuilt on every `npm run build`) -----------
+public/search-index.json
 
 # --- Caches ---------------------------------------------------------------
 .npm

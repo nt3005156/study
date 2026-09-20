@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import data from '@/content/class-10-computer-science.json';
 
 export const metadata = {
-  title: 'Class 10 Computer Science — Chapters | Study Platform',
+  title: 'Class 10 Computer Science — Chapters | study.companion',
   description: 'Class 10 Computer Science chapters with summaries, key concepts, Q&A, exercise solutions and detailed teaching notes with figures.',
 };
 
