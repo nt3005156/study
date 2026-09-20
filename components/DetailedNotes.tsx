@@ -238,7 +238,7 @@ const VISUAL = new Set(['figure', 'diagram']);
 
 type Node =
   | { kind: 'single'; block: Block }
-  | { kind: 'pair'; text: Block; visual: Block; flip?: boolean }
+  | { kind: 'pair'; text: Block; visual: Block; flip?: boolean; extra?: Block }
   | { kind: 'gallery'; blocks: Block[] };
 
 function pairBlocks(blocks: Block[]): Node[] {
@@ -285,6 +285,17 @@ function pairBlocks(blocks: Block[]): Node[] {
     }
     i++;
   }
+  // A list directly below a pair continues the same breath of text (an intro
+  // paragraph followed by its key points): fold it into the pair's text
+  // column so the figure sits beside the full content, not a lone sentence.
+  for (let k = 0; k + 1 < nodes.length; k++) {
+    const cur = nodes[k];
+    const nxt = nodes[k + 1];
+    if (cur.kind === 'pair' && !cur.extra && nxt.kind === 'single' && nxt.block.type === 'list') {
+      cur.extra = nxt.block;
+      nodes.splice(k + 1, 1);
+    }
+  }
   return nodes;
 }
 
@@ -317,14 +328,16 @@ export function DetailedNotes({ sections, defaultLang, sideBySide = false }: { s
                   <aside className="min-w-0">
                     <BlockView block={node.visual} defaultLang={defaultLang} compact={sideBySide} />
                   </aside>
-                  <div className="min-w-0">
+                  <div className="min-w-0 space-y-4">
                     <BlockView block={node.text} defaultLang={defaultLang} compact={sideBySide} />
+                    {node.extra ? <BlockView block={node.extra} defaultLang={defaultLang} compact={sideBySide} /> : null}
                   </div>
                 </div>
               ) : (
                 <div key={i} className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
-                  <div className="min-w-0">
+                  <div className="min-w-0 space-y-4">
                     <BlockView block={node.text} defaultLang={defaultLang} compact={sideBySide} />
+                    {node.extra ? <BlockView block={node.extra} defaultLang={defaultLang} compact={sideBySide} /> : null}
                   </div>
                   <aside className="min-w-0">
                     <BlockView block={node.visual} defaultLang={defaultLang} compact={sideBySide} />
