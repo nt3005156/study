@@ -200,31 +200,6 @@
                 "type": "note",
                 "title": "Data and information are not the same",
                 "text": "Data is raw — a list of marks, say. Information is what you get once the data has been processed and means something, such as a class average. The computer turns one into the other."
-              },
-              {
-                "type": "figure",
-                "src": "/figures/class6/computer-in-education.jpg",
-                "caption": "Computer in Education"
-              },
-              {
-                "type": "figure",
-                "src": "/figures/class6/computer-in-business.jpg",
-                "caption": "Computer in Business"
-              },
-              {
-                "type": "figure",
-                "src": "/figures/class6/computer-in-office.jpg",
-                "caption": "Computer in Office"
-              },
-              {
-                "type": "figure",
-                "src": "/figures/class6/computer-in-communication.jpg",
-                "caption": "Computer in Communication"
-              },
-              {
-                "type": "figure",
-                "src": "/figures/class6/computer-in-bank.jpg",
-                "caption": "Computer in Bank"
               }
             ]
           },
@@ -315,7 +290,22 @@
               },
               {
                 "type": "p",
-                "text": "Used for learning: online classes, online examinations, online tutoring, reading e-books, practical exercises and laboratory work. It has also increased the use of audio-visual material in education."
+                "text": "Computers support teaching and learning at every level, in classrooms as well as online."
+              },
+              {
+                "type": "figure",
+                "src": "/figures/class6/computer-in-education.jpg",
+                "caption": "Computer in Education"
+              },
+              {
+                "type": "list",
+                "title": "Used for learning:",
+                "items": [
+                  "Online classes &amp; online examinations",
+                  "Online tutoring &amp; reading e-books",
+                  "Practical exercises and laboratory work",
+                  "Audio-visual learning materials"
+                ]
               },
               {
                 "type": "h3",
@@ -323,7 +313,21 @@
               },
               {
                 "type": "p",
-                "text": "Fully used across the business sector — in department stores, restaurants, hotels and other retail centres — to process sales transactions, making them easy and accurate. Investors analyse investments, sales, income and expenses, markets and other aspects of business with them."
+                "text": "Computers are fully used across the business sector — in department stores, restaurants, hotels and other retail centres."
+              },
+              {
+                "type": "figure",
+                "src": "/figures/class6/computer-in-business.jpg",
+                "caption": "Computer in Business"
+              },
+              {
+                "type": "list",
+                "title": "Used in business for:",
+                "items": [
+                  "Processing sales transactions — easy and accurate",
+                  "Analysing investments, sales, income and expenses",
+                  "Studying markets and other aspects of business"
+                ]
               },
               {
                 "type": "h3",
@@ -331,7 +335,22 @@
               },
               {
                 "type": "p",
-                "text": "Used for writing letters, memos and notices, sending emails, scheduling meetings, and presenting business around the world through multimedia presentations. This has extended to mobile devices: professionals now read and answer email, open business files and update social media on the move."
+                "text": "Office work runs on computers, from daily correspondence to worldwide presentations."
+              },
+              {
+                "type": "figure",
+                "src": "/figures/class6/computer-in-office.jpg",
+                "caption": "Computer in Office"
+              },
+              {
+                "type": "list",
+                "title": "Used in the office for:",
+                "items": [
+                  "Writing letters, memos and notices",
+                  "Sending emails and scheduling meetings",
+                  "Presenting business around the world through multimedia presentations",
+                  "Working on the move — reading and answering email, opening business files and posting updates on mobile devices"
+                ]
               },
               {
                 "type": "h3",
@@ -339,7 +358,21 @@
               },
               {
                 "type": "p",
-                "text": "A computer is vital to communication and is the centrepiece of Information and Communication Technology (ICT). It is used for email, social media, video chat, websites, blogs, online conferencing and internet fax."
+                "text": "The computer is vital to communication — it is the centrepiece of Information and Communication Technology (ICT)."
+              },
+              {
+                "type": "figure",
+                "src": "/figures/class6/computer-in-communication.jpg",
+                "caption": "Computer in Communication"
+              },
+              {
+                "type": "list",
+                "title": "Used for communication through:",
+                "items": [
+                  "Email and internet fax",
+                  "Social media, websites and blogs",
+                  "Video chat and online conferencing"
+                ]
               },
               {
                 "type": "h3",
@@ -347,7 +380,22 @@
               },
               {
                 "type": "p",
-                "text": "Used for handling customer transactions, maintaining the ledger, issuing deposit receipts, making withdrawals and deposits, and providing online service to customers who want to know their balance. It is also used for online payments."
+                "text": "Banks depend on computers to serve customers quickly and keep records accurate."
+              },
+              {
+                "type": "figure",
+                "src": "/figures/class6/computer-in-bank.jpg",
+                "caption": "Computer in Bank"
+              },
+              {
+                "type": "list",
+                "title": "Used in banks for:",
+                "items": [
+                  "Handling customer transactions, withdrawals and deposits",
+                  "Maintaining the ledger and issuing deposit receipts",
+                  "Online services such as balance enquiry",
+                  "Online payments"
+                ]
               },
               {
                 "type": "table",
@@ -391,32 +439,32 @@
           {
             "file": "/figures/class6/computer-in-education.jpg",
             "caption": "Computer in Education",
-            "section": "definition",
-            "section_title": "Definition of Computer"
+            "section": "application-areas",
+            "section_title": "Application Areas of Computer"
           },
           {
             "file": "/figures/class6/computer-in-business.jpg",
             "caption": "Computer in Business",
-            "section": "definition",
-            "section_title": "Definition of Computer"
+            "section": "application-areas",
+            "section_title": "Application Areas of Computer"
           },
           {
             "file": "/figures/class6/computer-in-office.jpg",
             "caption": "Computer in Office",
-            "section": "definition",
-            "section_title": "Definition of Computer"
+            "section": "application-areas",
+            "section_title": "Application Areas of Computer"
           },
           {
             "file": "/figures/class6/computer-in-communication.jpg",
             "caption": "Computer in Communication",
-            "section": "definition",
-            "section_title": "Definition of Computer"
+            "section": "application-areas",
+            "section_title": "Application Areas of Computer"
           },
           {
             "file": "/figures/class6/computer-in-bank.jpg",
             "caption": "Computer in Bank",
-            "section": "definition",
-            "section_title": "Definition of Computer"
+            "section": "application-areas",
+            "section_title": "Application Areas of Computer"
           }
         ],
         "exercise": {
