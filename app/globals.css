@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0f172a;
+  --paper: #f8fafc;
+  --cream: #fff7ed;
+  --amber: #f59e0b;
+  --amber-deep: #d97706;
+}
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: var(--font-sans), 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; letter-spacing: -0.005em; background: #f8fafc; color: #0f172a; }
+
+::selection { background: #fde68a; color: #0f172a; }
+
+.prose-custom h1 { font-family: var(--font-serif), Literata, Georgia, serif; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; color: #0f172a; }
+.prose-custom h2 { font-family: var(--font-serif), Literata, Georgia, serif; font-weight: 700; letter-spacing: -0.015em; line-height: 1.25; color: #1e293b; }
+.prose-custom h3 { font-family: var(--font-sans), 'Plus Jakarta Sans', sans-serif; font-weight: 700; letter-spacing: -0.01em; color: #334155; }
+.prose-custom p { line-height: 1.7; color: #334155; }
+.prose-custom ul { list-style: disc; padding-left: 1.25rem; }
+.prose-custom li { margin-bottom: 0.25rem; line-height: 1.65; }
+
+/* Print styles */
+@media print {
+  nav, header .no-print, .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  a { text-decoration: underline; color: #000; }
+  .prose-custom h1, .prose-custom h2, .prose-custom h3 { break-after: avoid; }
+  .prose-custom img, .prose-custom svg { max-width: 100%; height: auto; }
+  .card { border: 1px solid #ccc; box-shadow: none !important; break-inside: avoid; }
+}
