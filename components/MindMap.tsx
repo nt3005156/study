@@ -25,7 +25,7 @@ export function MindMap({ nodes }: { nodes: ClassNode[] }) {
       viewBox="0 0 800 800"
       role="img"
       aria-label={`Mind map of study materials: ${nodes.map((n) => `Class ${n.n}`).join(', ')}`}
-      className="mx-auto aspect-square h-[min(66vh,40rem)] w-auto max-w-full"
+      className="mx-auto aspect-square h-[min(74vh,44rem)] w-auto max-w-full"
     >
       <defs>
         <radialGradient id="mindmap-glow" cx="50%" cy="50%" r="50%">
