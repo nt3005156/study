@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -19,11 +18,11 @@ export default function HomePage() {
         </p>
         <Link
           href="/browse"
-          className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-ink text-white text-lg font-bold shadow-2xl shadow-ink/25 hover:bg-slate-800 hover:-translate-y-0.5 transition-all focus:outline-none focus:ring-4 focus:ring-ink/20"
+          className="group relative inline-flex items-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-amber to-amber-deep px-10 py-4 text-lg font-bold text-white shadow-[0_20px_50px_-12px_rgba(217,119,6,0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_28px_60px_-12px_rgba(217,119,6,0.65)] focus:outline-none focus:ring-4 focus:ring-amber/30"
           aria-label="Browse Materials"
         >
-          Browse Materials
-          <ArrowRight size={18} />
+          <span aria-hidden="true" className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+          <span className="relative">Browse Materials</span>
         </Link>
       </div>
     </section>
