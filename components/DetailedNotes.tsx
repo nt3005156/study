@@ -31,7 +31,7 @@ export type Section = {
   blocks: Block[];
 };
 
-function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang }) {
+function BlockView({ block, defaultLang, compact = false }: { block: Block; defaultLang?: Lang; compact?: boolean }) {
   switch (block.type) {
     case 'p':
       return <RichBlock as="p" html={block.text} className="text-[15px] leading-[1.75] text-slate-700" />;
@@ -130,13 +130,26 @@ function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang })
       );
 
     case 'figure':
+      if (!compact) {
+        return (
+          <figure className="rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+            <div className="bg-slate-50 flex items-center justify-center p-4">
+              <FigureImage src={block.src} alt={block.caption || 'Textbook figure'} width={block.width} />
+            </div>
+            <figcaption className="px-5 py-3 border-t border-slate-100 text-sm text-stone">
+              <span className="font-semibold text-ink">Figure</span> — <Rich html={block.caption} />
+            </figcaption>
+          </figure>
+        );
+      }
       return (
-        <figure className="rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
-          <div className="bg-slate-50 flex items-center justify-center p-4">
-            <FigureImage src={block.src} alt={block.caption || 'Textbook figure'} width={block.width} />
+        <figure className="mx-auto w-full max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_36px_-16px_rgba(15,23,42,0.35)] ring-1 ring-slate-900/5">
+          <div className="flex items-center justify-center bg-gradient-to-b from-slate-50 to-white p-3">
+            <FigureImage src={block.src} alt={block.caption || 'Textbook figure'} width={block.width} compact />
           </div>
-          <figcaption className="px-5 py-3 border-t border-slate-100 text-sm text-stone">
-            <span className="font-semibold text-ink">Figure</span> — <Rich html={block.caption} />
+          <figcaption className="flex items-start gap-2 border-t border-slate-100 bg-white px-4 py-2.5 text-[13px] leading-snug text-stone">
+            <span className="mt-px shrink-0 rounded-md bg-amber/15 px-1.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-amber-deep">Figure</span>
+            <span className="min-w-0 flex-1"><Rich html={block.caption} />{typeof block.page === 'number' ? <span className="whitespace-nowrap text-slate-400"> · p. {block.page}</span> : null}</span>
           </figcaption>
         </figure>
       );
@@ -145,9 +158,26 @@ function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang })
       // Inline SVG overview diagrams (Class 6). The SVG is trusted build-time
       // content from our own JSON; strip any script element defensively.
       const svg = (block.svg || '').replace(/<script[\s\S]*?<\/script>/gi, '');
+      if (!compact) {
+        return (
+          <figure className="rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+            <div className="bg-slate-50 flex items-center justify-center p-4">
+              <div
+                role="img"
+                aria-label={block.title || 'Chapter diagram'}
+                className="w-full max-w-full rounded-lg border border-slate-200 bg-white p-2 [&>svg]:h-auto [&>svg]:w-full"
+                dangerouslySetInnerHTML={{ __html: svg }}
+              />
+            </div>
+            <figcaption className="px-5 py-3 border-t border-slate-100 text-sm text-stone">
+              <span className="font-semibold text-ink">Diagram</span> — <Rich html={block.title} />
+            </figcaption>
+          </figure>
+        );
+      }
       return (
-        <figure className="rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
-          <div className="bg-slate-50 flex items-center justify-center p-4">
+        <figure className="mx-auto w-full max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_36px_-16px_rgba(15,23,42,0.35)] ring-1 ring-slate-900/5">
+          <div className="flex items-center justify-center bg-gradient-to-b from-slate-50 to-white p-3">
             <div
               role="img"
               aria-label={block.title || 'Chapter diagram'}
@@ -155,8 +185,9 @@ function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang })
               dangerouslySetInnerHTML={{ __html: svg }}
             />
           </div>
-          <figcaption className="px-5 py-3 border-t border-slate-100 text-sm text-stone">
-            <span className="font-semibold text-ink">Diagram</span> — <Rich html={block.title} />
+          <figcaption className="flex items-start gap-2 border-t border-slate-100 bg-white px-4 py-2.5 text-[13px] leading-snug text-stone">
+            <span className="mt-px shrink-0 rounded-md bg-sky/15 px-1.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-sky">Diagram</span>
+            <span className="min-w-0 flex-1"><Rich html={block.title} /></span>
           </figcaption>
         </figure>
       );
@@ -198,10 +229,36 @@ function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang })
   }
 }
 
-export function DetailedNotes({ sections, defaultLang }: { sections: Section[]; defaultLang?: Lang }) {
+/** Print-textbook layout: a figure/diagram is set beside the paragraph or list
+ *  that introduces it, instead of stacking full-width below it. */
+const PAIRABLE = new Set(['p', 'list', 'definition', 'note', 'example', 'teacher']);
+const VISUAL = new Set(['figure', 'diagram']);
+
+type Node =
+  | { kind: 'single'; block: Block }
+  | { kind: 'pair'; text: Block; visual: Block };
+
+function pairBlocks(blocks: Block[]): Node[] {
+  const nodes: Node[] = [];
+  for (const b of blocks) {
+    const prev = nodes[nodes.length - 1];
+    if (b && VISUAL.has(b.type) && prev && prev.kind === 'single' && PAIRABLE.has(prev.block.type)) {
+      nodes[nodes.length - 1] = { kind: 'pair', text: prev.block, visual: b };
+    } else {
+      nodes.push({ kind: 'single', block: b });
+    }
+  }
+  return nodes;
+}
+
+export function DetailedNotes({ sections, defaultLang, sideBySide = false }: { sections: Section[]; defaultLang?: Lang; sideBySide?: boolean }) {
   return (
     <div className="space-y-14">
-      {sections.map((section) => (
+      {sections.map((section) => {
+        const nodes: Node[] = sideBySide
+          ? pairBlocks(section.blocks)
+          : section.blocks.map((block) => ({ kind: 'single', block }) as Node);
+        return (
         <section key={section.id} id={`sec-${section.id}`} className="scroll-mt-32">
           <header className="mb-5 pb-3 border-b-2 border-amber/30">
             <div className="flex items-baseline gap-3 flex-wrap">
@@ -209,10 +266,24 @@ export function DetailedNotes({ sections, defaultLang }: { sections: Section[]; 
             </div>
           </header>
           <div className="space-y-5">
-            {section.blocks.map((block, i) => <BlockView key={i} block={block} defaultLang={defaultLang} />)}
+            {nodes.map((node, i) =>
+              node.kind === 'single' ? (
+                <BlockView key={i} block={node.block} defaultLang={defaultLang} compact={sideBySide} />
+              ) : (
+                <div key={i} className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
+                  <div className="min-w-0">
+                    <BlockView block={node.text} defaultLang={defaultLang} compact={sideBySide} />
+                  </div>
+                  <aside className="min-w-0">
+                    <BlockView block={node.visual} defaultLang={defaultLang} compact={sideBySide} />
+                  </aside>
+                </div>
+              ),
+            )}
           </div>
         </section>
-      ))}
+        );
+      })}
     </div>
   );
 }

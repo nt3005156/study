@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
   ArrowLeft, ArrowRight, BookOpen, Lightbulb, PenTool, Layers,
-  KeyRound, Zap, CalendarClock, Target, Image as ImageIcon,
+  KeyRound, Zap, CalendarClock, Target,
 } from 'lucide-react';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { DetailedNotes, DetailedNotesToc, type Section } from '@/components/DetailedNotes';
@@ -10,7 +10,6 @@ import type { Lang } from '@/components/CodeBlock';
 import { UnitSplitView } from '@/components/UnitSplitView';
 import { ExerciseBank, type Exercise } from '@/components/ExerciseBank';
 import { Rich, RichBlock } from '@/components/Rich';
-import { FigureImage } from '@/components/FigureImage';
 import data from '@/content/class-6-computer-science.json';
 
 type QA = { q: string; a: string };
@@ -155,7 +154,7 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
 
           <UnitSplitView
             hasDetailed={Boolean(detailed)}
-            notes={detailed ? <DetailedNotes sections={detailed.sections} defaultLang={UNIT_DEFAULT_LANG[unit.unit_id]} /> : null}
+            notes={detailed ? <DetailedNotes sections={detailed.sections} defaultLang={UNIT_DEFAULT_LANG[unit.unit_id]} sideBySide /> : null}
             qa={
               <div className="space-y-5 rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
                 {([
@@ -194,7 +193,7 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
                         detailed.exercise.mcq.length > 0 ? `${detailed.exercise.mcq.length} multiple-choice` : '',
                       ].filter(Boolean).join(', ')} questions{detailed.exercise.mcq.length > 0 ? ' with answer key' : ''}) is given in full in
                       the <a href="#exercise" className="text-amber-deep font-semibold underline">{detailed.exercise_heading ?? `Exercise ${unit.chapter.replace('Chapter ', '')}`}</a> section
-                      below, with a solved model answer for every question.
+                      below, with a solved answer for every question.
                     </p>
                   </div>
                 ) : null}
@@ -210,7 +209,7 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
               <h2 id="ex-heading" className="flex items-center gap-3 font-serif text-2xl font-bold text-ink mb-5">
                 <PenTool className="text-amber" size={24} /> {detailed.exercise_heading ?? `Exercise ${unit.chapter.replace('Chapter ', '')}`} — Question Bank with Solved Answers
               </h2>
-              <ExerciseBank exercise={detailed.exercise} />
+              <ExerciseBank exercise={detailed.exercise} polished />
             </section>
 
             {/* key terms */}
@@ -274,30 +273,6 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
                     ))}
                   </tbody>
                 </table>
-              </div>
-            </section>
-
-            {/* figure index */}
-            <section id="figures" aria-labelledby="fig-heading" className="mb-14 scroll-mt-24">
-              <h2 id="fig-heading" className="flex items-center gap-3 font-serif text-2xl font-bold text-ink mb-5">
-                <ImageIcon className="text-amber" size={24} /> Figure Index ({detailed.figures_index.length} figures)
-              </h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {detailed.figures_index.map((f, i) => (
-                  <a
-                    key={i}
-                    href={`#sec-${f.section}`}
-                    className="group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
-                  >
-                    <FigureImage src={f.file} alt={f.caption} variant="thumb" />
-                    <div className="p-4">
-                      <p className="text-xs font-bold text-amber-deep mb-1">
-                        {f.section_title}
-                      </p>
-                      <p className="text-sm text-slate-700 leading-snug group-hover:text-ink"><Rich html={f.caption} /></p>
-                    </div>
-                  </a>
-                ))}
               </div>
             </section>
           </>

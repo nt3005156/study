@@ -45,11 +45,13 @@ function QuestionList({
   icon,
   tone,
   items,
+  polished = false,
 }: {
   title: string;
   icon: typeof ListOrdered;
   tone: 'amber' | 'sky' | 'emerald' | 'violet';
   items: Qa[];
+  polished?: boolean;
 }) {
   const [open, setOpen] = useState<Set<number>>(new Set());
   const Icon = icon;
@@ -83,6 +85,37 @@ function QuestionList({
       ? 'bg-violet/5 border-violet/20'
       : 'bg-skyLight/50 border-sky/20';
 
+  // Welcoming answer cards (polished classes): soft gradient wash, coloured
+  // spine, airier student-friendly typography. Lettered <ol> markers come
+  // from `.answer-polished` in globals.css.
+  const polishedAnswerCls =
+    tone === 'amber'
+      ? 'border-amber-200 border-l-4 border-l-amber bg-gradient-to-br from-amber-50 via-white to-white'
+      : tone === 'emerald'
+      ? 'border-emerald-200 border-l-4 border-l-emerald bg-gradient-to-br from-emerald-50 via-white to-white'
+      : tone === 'violet'
+      ? 'border-violet-200 border-l-4 border-l-violet bg-gradient-to-br from-violet-50 via-white to-white'
+      : 'border-sky-200 border-l-4 border-l-sky bg-gradient-to-br from-sky-50 via-white to-white';
+
+  const polishedType =
+    'answer-polished text-[15px] leading-[1.8] text-slate-700 ' +
+    '[&_p]:mb-2.5 [&_ol]:pl-6 [&_ol]:space-y-2.5 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 ' +
+    '[&_li]:leading-[1.8] ' +
+    '[&_table]:w-full [&_table]:text-sm [&_table]:border-collapse ' +
+    '[&_th]:border [&_th]:border-slate-300 [&_th]:bg-white/70 [&_th]:px-2.5 [&_th]:py-2 [&_th]:text-left [&_th]:font-bold [&_th]:text-ink ' +
+    '[&_td]:border [&_td]:border-slate-300 [&_td]:px-2.5 [&_td]:py-2 [&_td]:align-top ' +
+    '[&_code]:rounded [&_code]:bg-ink/5 [&_code]:px-1 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[0.85em] [&_code]:text-ink ' +
+    '[&_strong]:font-bold [&_strong]:text-ink [&_em]:text-slate-600';
+
+  const legacyType =
+    'text-[15px] leading-relaxed text-slate-700 ' +
+    '[&_p]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 ' +
+    '[&_li]:mb-1 [&_li]:leading-relaxed ' +
+    '[&_table]:w-full [&_table]:text-sm [&_table]:border-collapse ' +
+    '[&_th]:border [&_th]:border-slate-300 [&_th]:bg-white/70 [&_th]:px-2 [&_th]:py-1.5 [&_th]:text-left [&_th]:font-bold [&_th]:text-ink ' +
+    '[&_td]:border [&_td]:border-slate-300 [&_td]:px-2 [&_td]:py-1.5 [&_td]:align-top ' +
+    '[&_code]:rounded [&_code]:bg-ink/5 [&_code]:px-1 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[0.85em] [&_code]:text-ink';
+
   return (
     <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -109,27 +142,36 @@ function QuestionList({
                 type="button"
                 onClick={() => toggle(i)}
                 aria-expanded={isOpen}
-                className="w-full text-left rounded-xl border border-slate-200 bg-paper px-4 py-3 hover:border-amber/50 transition"
+                className={
+                  polished
+                    ? 'w-full text-left rounded-2xl border border-slate-200 bg-white px-5 py-3.5 shadow-sm hover:border-amber/60 hover:shadow-md transition'
+                    : 'w-full text-left rounded-xl border border-slate-200 bg-paper px-4 py-3 hover:border-amber/50 transition'
+                }
               >
                 <span className="font-semibold text-ink">Q{i + 1}.</span>{' '}
-                <Rich html={item.q} className="text-slate-700" />
-                <span className="float-right ml-2 text-stone" aria-hidden>
-                  {isOpen ? '−' : '+'}
-                </span>
+                <Rich html={item.q} className="text-slate-700 leading-relaxed" />
+                {polished ? (
+                  <span
+                    aria-hidden
+                    className="float-right ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-amber/10 text-sm font-bold text-amber-deep"
+                  >
+                    {isOpen ? '−' : '+'}
+                  </span>
+                ) : (
+                  <span className="float-right ml-2 text-stone" aria-hidden>
+                    {isOpen ? '−' : '+'}
+                  </span>
+                )}
               </button>
 
               {isOpen ? (
-                <div className={`mt-2 rounded-xl border px-4 py-3 ${answerCls}`}>
-                  <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-stone">
-                    Model answer
-                  </p>
-                  <div className="text-[15px] leading-relaxed text-slate-700
-                    [&_p]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5
-                    [&_li]:mb-1 [&_li]:leading-relaxed
-                    [&_table]:w-full [&_table]:text-sm [&_table]:border-collapse
-                    [&_th]:border [&_th]:border-slate-300 [&_th]:bg-white/70 [&_th]:px-2 [&_th]:py-1.5 [&_th]:text-left [&_th]:font-bold [&_th]:text-ink
-                    [&_td]:border [&_td]:border-slate-300 [&_td]:px-2 [&_td]:py-1.5 [&_td]:align-top
-                    [&_code]:rounded [&_code]:bg-ink/5 [&_code]:px-1 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[0.85em] [&_code]:text-ink">
+                <div className={polished ? `mt-2 rounded-2xl border px-5 py-4 shadow-sm ${polishedAnswerCls}` : `mt-2 rounded-xl border px-4 py-3 ${answerCls}`}>
+                  {polished ? null : (
+                    <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-stone">
+                      Model answer
+                    </p>
+                  )}
+                  <div className={polished ? polishedType : legacyType}>
                     <AnswerBody html={item.a} />
                   </div>
                 </div>
@@ -142,7 +184,7 @@ function QuestionList({
   );
 }
 
-export function ExerciseBank({ exercise }: { exercise: Exercise }) {
+export function ExerciseBank({ exercise, polished = false }: { exercise: Exercise; polished?: boolean }) {
   const [reveal, setReveal] = useState(false);
   const [picked, setPicked] = useState<Record<number, number>>({});
 
@@ -160,16 +202,17 @@ export function ExerciseBank({ exercise }: { exercise: Exercise }) {
           icon={CaseSensitive}
           tone="emerald"
           items={exercise.full_forms}
+          polished={polished}
         />
       ) : null}
 
       {exercise.short.length > 0 || exercise.long.length > 0 ? (
         <div className="grid lg:grid-cols-2 gap-6">
           {exercise.short.length > 0 ? (
-  <QuestionList title="Short answer questions" icon={FileQuestion} tone="amber" items={exercise.short} />
+  <QuestionList title="Short answer questions" icon={FileQuestion} tone="amber" items={exercise.short} polished={polished} />
           ) : null}
           {exercise.long.length > 0 ? (
-  <QuestionList title="Long answer questions" icon={ListOrdered} tone="sky" items={exercise.long} />
+  <QuestionList title="Long answer questions" icon={ListOrdered} tone="sky" items={exercise.long} polished={polished} />
           ) : null}
         </div>
       ) : null}
@@ -180,6 +223,7 @@ export function ExerciseBank({ exercise }: { exercise: Exercise }) {
           icon={Code2}
           tone="violet"
           items={exercise.programming}
+          polished={polished}
         />
       ) : null}
 
@@ -189,6 +233,7 @@ export function ExerciseBank({ exercise }: { exercise: Exercise }) {
           icon={PenLine}
           tone="emerald"
           items={exercise.objective}
+          polished={polished}
         />
       ) : null}
 
@@ -198,6 +243,7 @@ export function ExerciseBank({ exercise }: { exercise: Exercise }) {
           icon={FlaskConical}
           tone="emerald"
           items={exercise.practical}
+          polished={polished}
         />
       ) : null}
 

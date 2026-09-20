@@ -1479,12 +1479,11 @@ def _svg(body, label, h=150):
 T = ("<text x='{x}' y='{y}' text-anchor='middle' fill='{f}' font-size='{s}' "
      "font-family='sans-serif'>{t}</text>")
 B = ("<rect x='{x}' y='{y}' width='{w}' height='{h}' rx='9' fill='{f}'/>")
-A = ("<line x1='{x1}' y1='{y}' x2='{x2}' y2='{y}' stroke='#0f172a' stroke-width='2'/>"
-     "<polygon points='{x2},{y} {x2m}, {ym} {x2m}, {yp}' fill='#0f172a'/>".replace(" ", ""))
-
-
 def _arrow(x1, x2, y):
-    return A.format(x1=x1, x2=x2, y=y, x2m=x2 - 9, ym=y - 5, yp=y + 5)
+    """A rightward connector arrow: shaft line + triangular head at x2."""
+    return ("<line x1='%s' y1='%s' x2='%s' y2='%s' stroke='#0f172a' stroke-width='2'/>"
+            "<polygon points='%s,%s %s,%s %s,%s' fill='#0f172a'/>"
+            % (x1, y, x2, y, x2, y, x2 - 9, y - 5, x2 - 9, y + 5))
 
 
 def _box(x, y, w, h, fill, lines, fs=12, fg="#fff"):

@@ -22,6 +22,15 @@ body { font-family: var(--font-sans), 'Plus Jakarta Sans', ui-sans-serif, system
 .prose-custom ul { list-style: disc; padding-left: 1.25rem; }
 .prose-custom li { margin-bottom: 0.25rem; line-height: 1.65; }
 
+/* Polished solved-answer typography (ExerciseBank `polished` mode).
+   Objective answers are authored as plain <ol> so sub-parts render with
+   textbook (a), (b), (c)… lettering and a clear visual hierarchy. */
+.answer-polished ol { list-style-type: lower-alpha; }
+.answer-polished ol > li::marker { font-weight: 800; color: #d97706; }
+.answer-polished ol > li { padding-left: 0.25rem; }
+.answer-polished ol > li + li { margin-top: 0.65rem; }
+.answer-polished ul > li::marker { color: #d97706; }
+
 /* Print styles */
 @media print {
   nav, header .no-print, .no-print { display: none !important; }

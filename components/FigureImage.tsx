@@ -17,11 +17,14 @@ export function FigureImage({
   alt,
   width,
   variant = 'full',
+  compact = false,
 }: {
   src?: string;
   alt?: string;
   width?: number;
   variant?: 'full' | 'thumb';
+  /** Textbook layout: cap the image height so figures never dominate the page. */
+  compact?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -74,7 +77,11 @@ export function FigureImage({
       src={src}
       alt={alt || 'Textbook figure'}
       width={width || 720}
-      className="h-auto w-full max-w-full rounded-lg border border-slate-200 bg-white object-contain"
+      className={
+        compact
+          ? 'h-auto max-h-[320px] w-auto max-w-full rounded-lg border border-slate-200 bg-white object-contain'
+          : 'h-auto w-full max-w-full rounded-lg border border-slate-200 bg-white object-contain'
+      }
       loading="lazy"
       onError={() => setFailed(true)}
     />
