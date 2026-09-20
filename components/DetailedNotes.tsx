@@ -1,6 +1,7 @@
 import { Lightbulb, BookMarked, GraduationCap, FlaskConical, Info, ListChecks } from 'lucide-react';
 import { Rich, RichBlock } from '@/components/Rich';
 import { CodeBlock, type Lang } from '@/components/CodeBlock';
+import { FigureImage } from '@/components/FigureImage';
 
 export type Block = {
   type: string;
@@ -16,6 +17,10 @@ export type Block = {
   page?: number;
   width?: number;
   lang?: Lang;
+  /** Inline SVG for `diagram` blocks (trusted build-time content). */
+  svg?: string;
+  /** `code` blocks for languages with no online runner (e.g. QBASIC). */
+  runnable?: boolean;
 };
 
 export type Section = {
@@ -93,7 +98,7 @@ function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang })
       );
 
     case 'code':
-      return <CodeBlock code={block.text ?? ''} lang={block.lang} title={block.title} defaultLang={defaultLang} />;
+      return <CodeBlock code={block.text ?? ''} lang={block.lang} title={block.title} defaultLang={defaultLang} runnable={block.runnable} />;
 
     case 'list':
       return (
@@ -128,20 +133,34 @@ function BlockView({ block, defaultLang }: { block: Block; defaultLang?: Lang })
       return (
         <figure className="rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
           <div className="bg-slate-50 flex items-center justify-center p-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={block.src}
-              alt={block.caption || 'Textbook figure'}
-              width={block.width || 720}
-              className="h-auto w-full max-w-full rounded-lg border border-slate-200 bg-white object-contain"
-              loading="lazy"
-            />
+            <FigureImage src={block.src} alt={block.caption || 'Textbook figure'} width={block.width} />
           </div>
           <figcaption className="px-5 py-3 border-t border-slate-100 text-sm text-stone">
             <span className="font-semibold text-ink">Figure</span> — <Rich html={block.caption} />
           </figcaption>
         </figure>
       );
+
+    case 'diagram': {
+      // Inline SVG overview diagrams (Class 6). The SVG is trusted build-time
+      // content from our own JSON; strip any script element defensively.
+      const svg = (block.svg || '').replace(/<script[\s\S]*?<\/script>/gi, '');
+      return (
+        <figure className="rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+          <div className="bg-slate-50 flex items-center justify-center p-4">
+            <div
+              role="img"
+              aria-label={block.title || 'Chapter diagram'}
+              className="w-full max-w-full rounded-lg border border-slate-200 bg-white p-2 [&>svg]:h-auto [&>svg]:w-full"
+              dangerouslySetInnerHTML={{ __html: svg }}
+            />
+          </div>
+          <figcaption className="px-5 py-3 border-t border-slate-100 text-sm text-stone">
+            <span className="font-semibold text-ink">Diagram</span> — <Rich html={block.title} />
+          </figcaption>
+        </figure>
+      );
+    }
 
     case 'table':
       return (

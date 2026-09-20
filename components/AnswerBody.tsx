@@ -10,7 +10,7 @@ import { useMemo } from 'react';
 import { RichBlock } from '@/components/Rich';
 import { CodeBlock, type Lang } from '@/components/CodeBlock';
 
-const PRE_RE = /<pre data-lang="([a-z]+)"><code>([\s\S]*?)<\/code><\/pre>/g;
+const PRE_RE = /<pre data-lang="([a-z]+)"( data-run="0")?><code>([\s\S]*?)<\/code><\/pre>/g;
 
 function unescapeCode(s: string): string {
   return s

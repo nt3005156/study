@@ -10,6 +10,7 @@ import type { Lang } from '@/components/CodeBlock';
 import { UnitSplitView } from '@/components/UnitSplitView';
 import { ExerciseBank, type Exercise } from '@/components/ExerciseBank';
 import { Rich, RichBlock } from '@/components/Rich';
+import { FigureImage } from '@/components/FigureImage';
 import data from '@/content/class-6-computer-science.json';
 
 type QA = { q: string; a: string };
@@ -38,10 +39,11 @@ export function generateStaticParams() {
 }
 
 /** Snippets too short to detect (syntax templates, sample output) fall back to
- *  the language this chapter is predominantly written in. */
+ *  the language this chapter is predominantly written in. Class 6 has only one
+ *  programming chapter — unit-15 (QBASIC) — and QBASIC has no online runner,
+ *  so its snippets stay plain `text` with runnable:false on each block. */
 const UNIT_DEFAULT_LANG: Record<string, Lang> = {
-  'unit-5': 'text',    // Program Design Tools (flowcharts and pseudocode)
-  'unit-6': 'python',  // Introduction to Python Programming
+  'unit-15': 'text',   // Computer Programming (QBASIC)
 };
 
 export default function UnitPage({ params }: { params: { unit: string } }) {
@@ -287,8 +289,7 @@ export default function UnitPage({ params }: { params: { unit: string } }) {
                     href={`#sec-${f.section}`}
                     className="group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition"
                   >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={f.file} alt={f.caption} className="h-32 w-full object-contain bg-slate-50 p-2" loading="lazy" />
+                    <FigureImage src={f.file} alt={f.caption} variant="thumb" />
                     <div className="p-4">
                       <p className="text-xs font-bold text-amber-deep mb-1">
                         {f.section_title}

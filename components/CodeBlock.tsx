@@ -345,12 +345,15 @@ export function CodeBlock({
   lang,
   title,
   defaultLang,
+  runnable = true,
 }: {
   code: string;
   lang?: Lang;
   title?: string;
   /** Used when the snippet is too short to detect (syntax templates, output samples). */
   defaultLang?: Lang;
+  /** False for languages with no online runner (e.g. QBASIC): hides "Run it". */
+  runnable?: boolean;
 }) {
   const body = (code || '').replace(/\s+$/, '');
   const guess = lang && lang !== 'text' ? lang : detectLang(body);
@@ -373,14 +376,20 @@ export function CodeBlock({
 
         <div className="ml-auto flex items-center gap-2">
           <CopyButton code={body} />
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            className="no-print inline-flex items-center gap-1.5 rounded-lg bg-emerald px-2.5 py-1 text-xs font-bold text-white transition hover:bg-emerald-600"
-          >
-            <Play size={13} /> {open ? 'Hide runner' : 'Run it'}
-          </button>
+          {runnable ? (
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              className="no-print inline-flex items-center gap-1.5 rounded-lg bg-emerald px-2.5 py-1 text-xs font-bold text-white transition hover:bg-emerald-600"
+            >
+              <Play size={13} /> {open ? 'Hide runner' : 'Run it'}
+            </button>
+          ) : (
+            <span className="no-print inline-flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/10 px-2.5 py-1 text-[11px] font-semibold text-slate-300">
+              Try this in the QBASIC editor (F5 to run)
+            </span>
+          )}
         </div>
       </div>
 
